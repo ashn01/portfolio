@@ -1,0 +1,52 @@
+.header
+{
+    margin: 0px 30px;
+}
+
+.headerLeft
+{
+    float: left;
+    width: 50%;
+}
+
+.headerRight
+{
+    float: left;
+    width: 50%;
+}
+
+/* Logo */
+.logo{
+
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Navigation */
+
+.navigation
+{
+    float: right;
+}
+
+.navStyle
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navItem
+{
+    float: left;
+    padding: 0px 30px;
+}
+
+.navItem a{
+    text-decoration: none;
+    color:black;
+}
