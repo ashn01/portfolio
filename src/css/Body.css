@@ -1,0 +1,59 @@
+.body
+{
+    margin: 80px 10px;
+}
+
+/* Ttile */
+.titleContainer
+{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.title
+{
+    font-size: 28px;
+    text-align: center;
+    padding: 20px;
+}
+
+.description
+{
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Links */
+.links
+{
+    text-align: center;
+}
+
+.linksStyle
+{
+    overflow: auto;
+    display: inline-table;
+    padding: 0px;
+}
+
+.linkItem
+{
+    display: inline;
+    list-style-type: none;
+    padding: 0px 10px;
+}
+
+.linkItem a
+{
+    text-decoration: underline;
+    font-size: 12px;
+    color: #444444;
+}
+
+.linkItem a:hover
+{
+    text-decoration: none;
+    color:white;
+    background-color: black;
+}
