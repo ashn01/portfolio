@@ -8,7 +8,7 @@ export default class Logo extends React.PureComponent
     {
         return (
             <div className="logo">
-                <a href='#'>Youngmin Kim</a>
+                <a href='/home'>Youngmin Kim</a>
             </div>
         )
     }

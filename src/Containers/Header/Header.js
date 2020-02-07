@@ -7,10 +7,6 @@ import '../../css/Header.css'
 
 export default class Header extends React.PureComponent
 {
-    constructor(props)
-    {
-        super(props);
-    }
     render()
     {
         return (
