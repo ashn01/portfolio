@@ -1,3 +1,5 @@
+@import url("fonts.css");
+
 .header
 {
     margin: 0px 30px;
@@ -44,10 +46,13 @@
 .navItem
 {
     float: left;
-    padding: 0px 30px;
+    padding: 0px 50px;
 }
 
 .navItem a{
     text-decoration: none;
-    color:black;
+    font-size: 24px;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: bold;
+    color:#3a484f;
 }

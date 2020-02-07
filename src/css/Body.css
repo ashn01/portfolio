@@ -1,3 +1,5 @@
+@import url("fonts.css");
+
 .body
 {
     margin: 80px 10px;
@@ -12,16 +14,21 @@
 
 .title
 {
-    font-size: 28px;
+    font-size: 48px;
+    font-family: 'Darker Grotesque', sans-serif;
+    color:#3a484f;
+    font-weight: bold;
     text-align: center;
-    padding: 20px;
+    padding-bottom: 50px;
 }
 
 .description
 {
-    font-size: 14px;
+    font-size: 24px;
+    font-family: 'Thasadith', sans-serif;
+    color:#3a484f;
     text-align: center;
-    padding: 10px;
+    padding-bottom: 50px;
 }
 
 /* Links */
@@ -35,20 +42,22 @@
     overflow: auto;
     display: inline-table;
     padding: 0px;
+    margin: 0
 }
 
 .linkItem
 {
     display: inline;
     list-style-type: none;
-    padding: 0px 10px;
+    padding: 0px 12px;;
 }
 
 .linkItem a
 {
     text-decoration: underline;
-    font-size: 12px;
-    color: #444444;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 16px;
+    color: #3f484f;
 }
 
 .linkItem a:hover
@@ -61,16 +70,17 @@
 /* Projects */
 .projects
 {
-    padding: 10px;
+    padding-top: 100px;
+    margin: 0px 140px;
 }
 .projectGridContainer
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-columns: auto;
-    grid-auto-rows: auto;
+    grid-auto-rows: 350px;
     grid-auto-flow: dense;
-    grid-gap: 10px;
+    grid-gap: 20px;
 }
 
 .projectScale1
@@ -80,6 +90,8 @@
     position: relative;
     grid-column-end: span 1;
     grid-row-end: span 1;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .projectScale2
@@ -89,6 +101,8 @@
     position: relative;
     grid-column-end: span 1;
     grid-row-end: span 2;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .projectScale4
@@ -98,6 +112,8 @@
     position: relative;
     grid-column-end: span 2;
     grid-row-end: span 2;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .projectImg{
@@ -132,26 +148,29 @@
 .projectTitle
 {
     text-align: center;
-    color: white;
-    font-size: 24px;
-    padding: 10px;
+    font-family: 'Thasadith', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 26px;
+    padding-bottom: 50px;
 }
 
 .projectDescription
 {
     text-align: center;
-    color: white;
-    font-size: 14px;
-    padding: 20px;
+    font-family: 'Thasadith', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    padding-bottom: 110px;
 }
 
 .projectLink
 {
-    padding-top: 40px;
     text-align: center;
 }
 .projectLink a
 {
     font-size: 12px;
-    color: #5688EA;
+    font-family: 'Thasadith', sans-serif;
+    color: #5d92ff;
 }

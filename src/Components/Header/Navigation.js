@@ -11,13 +11,13 @@ export default class Navigation extends React.PureComponent
             <div className="navigation">
                 <ul className="navStyle">
                     <li className="navItem">
-                        <a href='#'>Project</a>
+                        <a href='#'>PROJECTS</a>
                     </li>
                     <li className="navItem">
-                        <a href='#'>About</a>
+                        <a href='#'>ABOUT</a>
                     </li>
                     <li className="navItem">
-                        <a href='#'>Resume</a>
+                        <a href='#'>RESUME</a>
                     </li>
                 </ul>
             </div>
