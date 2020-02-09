@@ -8,7 +8,7 @@ export default class Logo extends React.PureComponent
     {
         return (
             <div className="logo">
-                <a href='/home'>Youngmin Kim</a>
+                <img src={process.env.PUBLIC_URL + "logo.png"}/>
             </div>
         )
     }

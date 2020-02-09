@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Logo from '../../Components/Header/Logo'
-import Navigation from '../../Components/Header/Navigation'
+import Logo from './Logo'
+import NavigationContainer from '../../Containers/Header/NavigationContainer'
 
 import '../../css/Header.css'
 
@@ -15,7 +15,7 @@ export default class Header extends React.PureComponent
                     <Logo/>
                 </div>
                 <div className="headerRight">
-                    <Navigation/>
+                    <NavigationContainer/>
                 </div>
             </div>
         );

@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Title from '../../Components/Body/Title'
-import Links from '../../Components/Body/Links'
-import Projets from '../../Components/Body/Projects'
+import Title from './Title'
+import Links from './Links'
+import Projets from './Projects'
 
 import '../../css/Body.css'
 
