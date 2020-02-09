@@ -51,5 +51,13 @@
     font-size: 24px;
     font-family: 'Darker Grotesque', sans-serif;
     font-weight: bold;
+    color:#bdc4c8;
+}
+
+.navItem.active a{
+    color:#3a484f;
+}
+
+.navItem a:hover{
     color:#3a484f;
 }

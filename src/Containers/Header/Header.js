@@ -7,6 +7,11 @@ import '../../css/Header.css'
 
 export default class Header extends React.PureComponent
 {
+    constructor(props)
+    {
+        super(props)
+    }
+
     render()
     {
         return (
@@ -15,7 +20,7 @@ export default class Header extends React.PureComponent
                     <Logo/>
                 </div>
                 <div className="headerRight">
-                    <Navigation/>
+                    <Navigation nav={this.props.nav}/>
                 </div>
             </div>
         );
