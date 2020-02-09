@@ -13,7 +13,7 @@ export default class Home extends React.PureComponent
         return (
             <div>
                 <div className="main">
-                    <Header/>
+                    <Header nav="project"/>
                     <Body/>
                 </div>
                 <Footer/>
