@@ -1,17 +1,12 @@
 import React from 'react';
 
-import Logo from '../../Components/Header/Logo'
-import Navigation from '../../Components/Header/Navigation'
+import Logo from './Logo'
+import NavigationContainer from '../../Containers/Header/NavigationContainer'
 
 import '../../css/Header.css'
 
 export default class Header extends React.PureComponent
 {
-    constructor(props)
-    {
-        super(props)
-    }
-
     render()
     {
         return (
@@ -20,7 +15,7 @@ export default class Header extends React.PureComponent
                     <Logo/>
                 </div>
                 <div className="headerRight">
-                    <Navigation nav={this.props.nav}/>
+                    <NavigationContainer/>
                 </div>
             </div>
         );
