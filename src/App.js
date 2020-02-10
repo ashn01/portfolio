@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BrowserRouter as Router, Route, Switch,  } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 
 import Home from './Components/Home'
 import Test from './Components/testHome'
@@ -12,8 +12,8 @@ function App() {
     <Router basename={'/'}>
       <Switch>
           <Route exact path={"/home"} component={Home} />
-          <Route path={"/about"} component={Test} />
-          <Route component={Home}/>
+          <Route exact path={"/about"} component={Test} />
+          <Route path="*" render={()=>(<Redirect to ="/home"/>)}/>
         </Switch>
     </Router>
   );
