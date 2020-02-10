@@ -10,10 +10,13 @@ export default class Navigation extends React.PureComponent
         return(
             <div className="navigation">
                 <ul className="navStyle">
-                    <li className={`navItem `}>
-                        <NavLink to='/home'  activeClassName="active">PROJECTS</NavLink>
+                    <li className="navItem">
+                        <NavLink to='/home' isActive={(match,location)=>{
+                            return location.pathname.search("home") !== -1;
+
+                        }} activeClassName="active">PROJECTS</NavLink>
                     </li>
-                    <li className={`navItem `} >
+                    <li className="navItem" >
                         <NavLink to='/about' activeClassName="active">ABOUT</NavLink>
                     </li>
                     <li className="navItem">

@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import '../../css/Body.css'
+import '../../../css/Body.css'
 
 export default class Title extends React.PureComponent
 {
