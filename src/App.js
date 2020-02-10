@@ -11,7 +11,7 @@ function App() {
     <Router basename={'/'}>
       <Switch>
           <Route exact path={"/home"} render={(props)=> <MainContainer contents="home"/>} />
-          <Route path={"/home:id"} render={(props)=> <MainContainer contents="project" id={props.match.params.id}/>} />
+          <Route path={"/project:id"} render={(props)=> <MainContainer contents="project" id={props.match.params.id}/>} />
           <Route exact path={"/about"} render={(props)=> <MainContainer contents="about"/>} />
           <Route path="*" render={()=>(<Redirect to ="/home"/>)}/>
         </Switch>

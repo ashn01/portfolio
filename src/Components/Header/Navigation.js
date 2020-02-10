@@ -12,7 +12,7 @@ export default class Navigation extends React.PureComponent
                 <ul className="navStyle">
                     <li className="navItem">
                         <NavLink to='/home' isActive={(match,location)=>{
-                            return location.pathname.search("home") !== -1;
+                            return match || location.pathname.search("project") !== -1;
 
                         }} activeClassName="active">PROJECTS</NavLink>
                     </li>

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 
 import '../../../css/Body.css'
 
@@ -54,7 +54,7 @@ export default class Projects extends React.PureComponent
                                                 {v.description}
                                             </div>
                                             <div className="projectLink">
-                                                <a href={`/project#${i}`} >View Detail</a>
+                                                <Link to={`/project:${i}`} >View Detail</Link>
                                             </div>
                                         </div>
                                     </div>
