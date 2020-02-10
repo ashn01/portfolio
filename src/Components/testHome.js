@@ -19,7 +19,8 @@ export default class Home extends React.PureComponent
             <div>
                 <div className="main">
                     <Header/>
-                    <Body/>
+                    <Header/>
+                    
                 </div>
                 <Footer/>
             </div>
