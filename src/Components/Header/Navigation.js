@@ -1,7 +1,8 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import $ from 'jquery'
-
+import { Slider, Elastic } from 'react-burgers'
+ 
 import '../../css/Header.css'
 
 export default class Navigation extends React.PureComponent
@@ -17,34 +18,44 @@ export default class Navigation extends React.PureComponent
     expandMenu()
     {
         $(".navPanel").toggleClass('active')
-        $(".main").toggleClass('active');
-        $(".container").toggleClass('active');
     }
 
     render()
     {
         return(
             <div className="navigation">
-                <div className="container" onClick={()=>this.expandMenu()}>
-                    <div className="bar1"></div>
-                    <div className="bar2"></div>
-                    <div className="bar3"></div>
+                <div className="burger">
+                    <Slider
+                        width={27}
+                        lineHeight={3}
+                        lineSpacing={3}
+                        color='#000000' 
+                        padding='0'
+                        onClick={()=>this.expandMenu()}
+                    />
                 </div>
                 <div className="navPanel">
+                    <div className="burger">
+                        <Elastic className="close"
+                            width={27}
+                            lineHeight={3}
+                            lineSpacing={3}
+                            padding='0'
+                            onClick={()=>this.expandMenu()}
+                            active={true}
+                        />
+                    </div>
                     <ul className="navStyle">
-                        <li className="navClose" onClick={()=>this.expandMenu()}>
-                            CLOSE
-                        </li>
                         <li className="navItem">
                             <NavLink to='/home' isActive={(match,location)=>{
                                 return match || location.pathname.search("project") !== -1;
-                                }} activeClassName="active">PROJECTS</NavLink>
+                                }} activeClassName="active" onClick={()=>this.expandMenu()}>PROJECTS</NavLink>
                         </li>
                         <li className="navItem" >
-                            <NavLink to='/about' activeClassName="active">ABOUT</NavLink>
+                            <NavLink to='/about' activeClassName="active" onClick={()=>this.expandMenu()}>ABOUT</NavLink>
                         </li>
                         <li className="navItem">
-                            <a href='/resume'>RESUME</a>
+                            <Link to='/resume' onClick={()=>this.expandMenu()}>RESUME</Link>
                         </li>
                     </ul>
                 </div>
