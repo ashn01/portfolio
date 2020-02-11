@@ -2,7 +2,7 @@
 
 
 /* Mobile Styles */
-@media only screen and (max-width: 636px) {
+@media only screen and (max-width: 749px) {
     .home
 {
     margin: 80px 10px;
@@ -81,7 +81,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-columns: auto;
-    grid-auto-rows: 100px;
+    grid-auto-rows: min-content;
     grid-auto-flow: dense;
     grid-gap: 20px;
 }
@@ -181,10 +181,10 @@
 }
   
 /* Tablet Styles */
-@media only screen and (min-width: 637px) and (max-width: 1599px) {
+@media only screen and (min-width: 750px) and (max-width: 1599px) {
 .home
 {
-    margin: 80px 10px;
+    margin: 140px 10px;
 }
 
 /* Ttile */
@@ -196,7 +196,7 @@
 
 .home .title
 {
-    font-size: 48px;
+    font-size: 52px;
     font-family: 'Darker Grotesque', sans-serif;
     color:#3a484f;
     font-weight: bold;
@@ -363,19 +363,19 @@
 @media only screen and (min-width: 1600px) {
     .home
     {
-        margin: 80px 10px;
+        margin: 140px 10px;
     }
     
     /* Ttile */
     .home .titleContainer
     {
         margin: 0 auto;
-        width: 50%;
+        width: 70%;
     }
     
     .home .title
     {
-        font-size: 48px;
+        font-size: 62px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         font-weight: bold;
