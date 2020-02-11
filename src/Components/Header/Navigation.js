@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink, Link } from 'react-router-dom';
 import $ from 'jquery'
-import { Slider, Elastic } from 'react-burgers'
+import { Elastic  } from 'react-burgers'
  
 import '../../css/Header.css'
 
@@ -17,6 +17,7 @@ export default class Navigation extends React.PureComponent
 
     expandMenu()
     {
+        this.setState({toggleMenu : !this.state.toggleMenu})
         $(".navPanel").toggleClass('active')
     }
 
@@ -25,26 +26,17 @@ export default class Navigation extends React.PureComponent
         return(
             <div className="navigation">
                 <div className="burger">
-                    <Slider
+                    <Elastic 
                         width={27}
                         lineHeight={3}
                         lineSpacing={3}
                         color='#000000' 
                         padding='0'
                         onClick={()=>this.expandMenu()}
+                        active={this.state.toggleMenu}
                     />
                 </div>
                 <div className="navPanel">
-                    <div className="burger">
-                        <Elastic className="close"
-                            width={27}
-                            lineHeight={3}
-                            lineSpacing={3}
-                            padding='0'
-                            onClick={()=>this.expandMenu()}
-                            active={true}
-                        />
-                    </div>
                     <ul className="navStyle">
                         <li className="navItem">
                             <NavLink to='/home' isActive={(match,location)=>{

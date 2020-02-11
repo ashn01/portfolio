@@ -23,6 +23,10 @@ export default class Project extends React.PureComponent
             }
         }
     }
+    componentDidMount()
+    {
+        window.scrollTo(0, 0)
+    }
     render()
     {
         return (
