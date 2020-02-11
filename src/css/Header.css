@@ -15,17 +15,6 @@
     top: -90px;
 }
 
-.container {
-    cursor: pointer;
-    float: right;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-}
 
 /* Mobile Styles */
 @media only screen and (max-width: 653px) {
@@ -57,11 +46,12 @@
     
     /* Navigation */
 
-    .bar1, .bar2, .bar3 {
-        width: 25px;
-        height: 3px;
-        background-color: #333;
-        margin: 3px 0;
+    .close
+    {
+        position: fixed;
+        color:#FFFFFF;
+        top: 20px;
+        right: 30px;
     }
 
     .navigation
@@ -73,43 +63,45 @@
     .navPanel
     {
         height: 100%;
-        width: 0px;
-        position: fixed;
+        width: 100%;
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
         top: 0;
-        right: 0;
-        overflow-x: hidden;
+        background-color: rgb(255, 255, 255); /* Black fallback color */
+        background-color: rgb(255, 255, 255); /* Black w/opacity */
+        overflow: hidden; /* Disable horizontal scroll */
         transition: 0.5s; 
-        transition-duration: 0.5s;
-        background-color: black;
+        opacity: 0;
+        visibility: hidden;
+        vertical-align: middle;
     }
 
     .navPanel.active
     {
-        width:150px;
+        opacity: 1;
+        visibility: visible;
     }
 
     .navStyle
     {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
         list-style-type: none;
-        padding-top: 50px;
         padding-left: 0px;
         text-align: center;
         margin: 0;
         overflow: hidden;
-    }
-    
-    .navClose
-    {
-        font-size: 26px;
-        font-family: 'Darker Grotesque', sans-serif;
-        font-weight: bold;
-        color:#bdc4c8;
-        padding-bottom: 30px;
+        align-items: center;
     }
 
     .navItem
     {
-        padding-bottom: 8px;
+        padding-bottom: 18px;
+        vertical-align: middle;
     }
 
     .navItem a{
@@ -158,55 +150,56 @@
     }
     
     /* Navigation */
-    
-    .bar1, .bar2, .bar3 {
-        width: 24px;
-        height: 4px;
-        background-color: #333;
-        margin: 4px 0;
+    .close
+    {
+        position: fixed;
+        color:#FFFFFF;
+        top: 20px;
+        right: 30px;
     }
 
     .navigation
     {
         float: right;
-        padding-right: 80px;
+        padding-right: 30px;
     }
 
     .navPanel
     {
         height: 100%;
-        width: 0px;
-        position: fixed;
+        width: 100%;
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
         top: 0;
-        right: 0;
-        overflow-x: hidden;
+        background-color: rgb(255, 255, 255); /* Black fallback color */
+        background-color: rgb(255, 255, 255); /* Black w/opacity */
+        overflow: hidden; /* Disable horizontal scroll */
         transition: 0.5s; 
-        transition-duration: 0.5s;
-        background-color: black;
+        opacity: 0;
+        visibility: hidden;
+        vertical-align: middle;
     }
 
     .navPanel.active
     {
-        width:150px;
+        opacity: 1;
+        visibility: visible;
     }
 
     .navStyle
     {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
         list-style-type: none;
-        padding-top: 50px;
         padding-left: 0px;
         text-align: center;
         margin: 0;
         overflow: hidden;
-    }
-
-    .navClose
-    {
-        font-size: 24px;
-        font-family: 'Darker Grotesque', sans-serif;
-        font-weight: bold;
-        color:#bdc4c8;
-        padding-bottom: 30px;
+        align-items: center;
     }
 
     .navItem
@@ -235,7 +228,7 @@
 @media only screen and (min-width: 1174px) {
     .header
     {
-        padding-top: 50px;
+        padding: 30px 0px;
         margin: 0px 30px;
         overflow: auto;
     }
@@ -253,23 +246,26 @@
     }
     
     /* Logo */
-    
+    .logo
+    {
+        position: relative;
+    }
     .logo img
     {
-        padding-left: 40px;
-        width: 190px;
+        padding-left: 50px;
     }
     
     
     /* Navigation */
-
-    .container {
+    .burger
+    {
         display: none;
     }
 
     .navigation
     {
         float: right;
+        padding-right: 120px;
     }
     
     .navStyle
@@ -287,7 +283,7 @@
     .navItem
     {
         float: left;
-        padding: 0px 50px;
+        padding-left: 100px;
     }
     
     .navItem a{
