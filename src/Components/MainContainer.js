@@ -30,8 +30,8 @@ export default class MainContainer extends React.PureComponent
         const contents = this.renderWhat()
         return (
             <div>
+                <Header/>
                 <div className="main">
-                    <Header/>
                     {
                        contents
                     }

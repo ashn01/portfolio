@@ -2,7 +2,7 @@
 
 
 /* Mobile Styles */
-@media only screen and (max-width: 636px) {
+@media only screen and (max-width: 749px) {
     .home
 {
     margin: 80px 10px;
@@ -81,7 +81,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-columns: auto;
-    grid-auto-rows: 100px;
+    grid-auto-rows: min-content;
     grid-auto-flow: dense;
     grid-gap: 20px;
 }
@@ -181,7 +181,7 @@
 }
   
 /* Tablet Styles */
-@media only screen and (min-width: 637px) and (max-width: 1599px) {
+@media only screen and (min-width: 750px) and (max-width: 1599px) {
 .home
 {
     margin: 80px 10px;
