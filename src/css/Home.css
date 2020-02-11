@@ -1,6 +1,176 @@
-.main{
-    padding-top: 40px;
-    padding-left: 60px;
-    padding-right: 60px;
+@import url("fonts.css");
+
+.home
+{
+    margin: 80px 10px;
+}
+
+/* Ttile */
+.home .titleContainer
+{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.home .title
+{
+    font-size: 48px;
+    font-family: 'Darker Grotesque', sans-serif;
+    color:#3a484f;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.home .description
+{
+    font-size: 24px;
+    font-family: 'Thasadith', sans-serif;
+    color:#3a484f;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* Links */
+.home .links
+{
+    text-align: center;
+}
+
+.home .linksStyle
+{
+    overflow: auto;
+    display: inline-table;
+    padding: 0px;
+    margin: 0
+}
+
+.home .linkItem
+{
+    display: inline;
+    list-style-type: none;
+    padding: 0px 12px;;
+}
+
+.home .linkItem a
+{
+    text-decoration: underline;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 16px;
+    color: #3f484f;
+}
+
+.home .linkItem a:hover
+{
+    text-decoration: none;
+    color:white;
+    background-color: black;
+}
+
+/* Projects */
+.home .projects
+{
+    padding-top: 100px;
+    margin: 0px 140px;
+}
+.home .projectGridContainer
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: auto;
+    grid-auto-rows: 350px;
+    grid-auto-flow: dense;
+    grid-gap: 20px;
+}
+
+.home .projectScale1
+{
+    width: 100%;
+    height: 100%;
     position: relative;
+    grid-column-end: span 1;
+    grid-row-end: span 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.home .projectScale2
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    grid-column-end: span 1;
+    grid-row-end: span 2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.home .projectScale4
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.home .projectImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home .projectItem
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #333333;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .projectItem:hover
+{
+    opacity: 0.8;
+}
+
+.home .projectTitle
+{
+    text-align: center;
+    font-family: 'Thasadith', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 26px;
+    padding-bottom: 50px;
+}
+
+.home .projectDescription
+{
+    text-align: center;
+    font-family: 'Thasadith', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    padding-bottom: 110px;
+}
+
+.home .projectLink
+{
+    text-align: center;
+}
+.home .projectLink a
+{
+    font-size: 12px;
+    font-family: 'Thasadith', sans-serif;
+    color: #5d92ff;
 }
