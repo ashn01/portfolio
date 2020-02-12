@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 
-
+const dbHome = require('./Models/Home')
 
 
 app.use(express.static(path.join(__dirname, '/build')));
@@ -17,6 +17,9 @@ app.get('/home', (req, res) => {
 
 app.get('/projects',(req,res)=>{
     console.log("projects requested")
+    dbHome.combineHome().then(
+        console.log('hello')
+    )
     res.send('Hello world')
 })
 
