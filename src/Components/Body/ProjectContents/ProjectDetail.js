@@ -3,16 +3,13 @@ import React from 'react'
 
 export default class ProjectDetail extends React.PureComponent
 {
-    constructor(props)
-    {
-        super(props)
-    }
+    
     render()
     {
         return (
             <div className="projectDetail">
                 <div className="projectImage">
-                    <img src="https://i.stack.imgur.com/GA6bB.png"/>
+                    <img src="https://i.stack.imgur.com/GA6bB.png" alt="project"/>
                 </div>
                 <div className="projectSummary">
                     <div>

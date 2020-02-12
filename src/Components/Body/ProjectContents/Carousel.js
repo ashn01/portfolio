@@ -7,11 +7,6 @@ import '../../../css/animate.css'
 
 export default class Carousel extends React.PureComponent
 {
-    constructor(props)
-    {
-        super(props)
-    }
-
     render()
     {
         return (

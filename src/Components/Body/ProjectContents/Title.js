@@ -4,10 +4,7 @@ import '../../../css/Home.css'
 
 export default class Title extends React.PureComponent
 {
-    constructor(props)
-    {
-        super(props)
-    }
+    
     render()
     {
         return(

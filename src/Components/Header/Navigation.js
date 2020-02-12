@@ -19,6 +19,9 @@ export default class Navigation extends React.PureComponent
     {
         this.setState({toggleMenu : !this.state.toggleMenu})
         $(".navPanel").toggleClass('active')
+        $(".burger").toggleClass('active')
+        $("body").toggleClass('active')
+        
     }
 
     render()
@@ -50,6 +53,14 @@ export default class Navigation extends React.PureComponent
                             <Link to='/resume' onClick={()=>this.expandMenu()}>RESUME</Link>
                         </li>
                     </ul>
+                    <div className="navIcons">
+                        <a href="https://www.linkedin.com/in/youngmin-kim-429b88140" target="_blank" rel="noopener noreferrer">
+                            <img src={process.env.PUBLIC_URL + "linkedin.png"} alt="linkedin"/>
+                        </a>
+                        <a href="https://github.com/ashn01" target="_blank" rel="noopener noreferrer">
+                            <img src={process.env.PUBLIC_URL + "github.png"} alt="github"/>
+                        </a>
+                    </div>
                 </div>
             </div>
         )
