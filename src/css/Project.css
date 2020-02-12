@@ -1,92 +1,289 @@
-.project
-{
-    margin: 160px 10px;
-}
 
-.project .titleContainer
-{
-    width: 90%;
-    margin: 0 auto;
-}
 
-.project .titleContainer .title
-{
-    font-size: 48px;
-    font-family: 'Darker Grotesque', sans-serif;
-    color:#3a484f;
-    font-weight: bold;
-    padding-bottom: 50px;
-}
-.project .titleContainer .description
-{
-    font-size: 24px;
-    font-family: 'Thasadith', sans-serif;
-    color:#3a484f;
-    padding-bottom: 50px;
-}
 
-.project .carouselContainer
-{
-    width: 90%;
-    margin: 0 auto;
-    padding-bottom: 100px;
-}
 
-.project .projectDetail
-{
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-}
 
-.project .projectDetail .projectImage
-{
-    width: 50%;
-    position: relative;
-    float: left;
-}
 
-.project .projectDetail .projectImage img
-{
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
-    display: block;
-    max-width: 100%;
-    height: auto;
-    top: 50%;
-    transform: translateY(-50%);
-}
+/* Mobile Styles */
+@media only screen and (max-width: 636px) {
+    .project
+    {
+        margin: 80px 10px;
+    }
 
-.project .projectDetail .projectSummary
-{
-    width: 50%;
-    position: relative;
-    float: left;
-}
+    .project .titleContainer
+    {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
 
-.project>.projectDetail>.projectSummary>div
-{
-    margin: 0;
-    padding: 0 10px;
-    position: relative;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-.project>.projectDetail>.projectSummary>div>div
-{
-    padding: 20px;
-}
-.project>.projectDetail>.projectSummary .projectSummaryTitles
-{
-    font-size: 14px;
-    font-weight: bold;
-    padding-bottom: 10px;
-}
+    .project .titleContainer .title
+    {
+        font-size: 36px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        font-weight: bold;
+        padding-bottom: 50px;
+    }
+    .project .titleContainer .description
+    {
+        font-size: 24px;
+        font-family: 'Thasadith', sans-serif;
+        color:#3a484f;
+        padding-bottom: 50px;
+    }
 
-.project>.projectDetail>.projectSummary .projectSummaryDescription
-{
-    font-size: 12px;
-    word-wrap: break-word;
+    .project .carouselContainer
+    {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+
+    .project .projectDetail
+    {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        overflow: auto;
+    }
+
+    .project .projectDetail .projectImage
+    {
+        width: 100%;
+        position: relative;
+        float: left;
+        padding-bottom: 50px;
+    }
+
+    .project .projectDetail .projectImage img
+    {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .project .projectDetail .projectSummary
+    {
+        width: 100%;
+        position: relative;
+        float: left;
+    }
+
+    .project>.projectDetail>.projectSummary>div
+    {
+        margin: 0 auto;
+        padding: 0 10px;
+        position: relative;
+    }
+    .project>.projectDetail>.projectSummary>div>div
+    {
+        padding: 15px;
+    }
+    .project>.projectDetail>.projectSummary .projectSummaryTitles
+    {
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+
+    .project>.projectDetail>.projectSummary .projectSummaryDescription
+    {
+        font-size: 16px;
+        word-wrap: break-word;
+    }
+}
+  
+/* Tablet Styles */
+@media only screen and (min-width: 637px) and (max-width: 1599px) {
+    .project
+    {
+        margin: 80px 10px;
+    }
+
+    .project .titleContainer
+    {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .project .titleContainer .title
+    {
+        font-size: 40px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        font-weight: bold;
+        padding-bottom: 50px;
+    }
+    .project .titleContainer .description
+    {
+        font-size: 20px;
+        font-family: 'Thasadith', sans-serif;
+        color:#3a484f;
+        padding-bottom: 50px;
+    }
+
+    .project .carouselContainer
+    {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 60px;
+    }
+
+    .project .projectDetail
+    {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .project .projectDetail .projectImage
+    {
+        width: 50%;
+        position: relative;
+        float: left;
+    }
+
+    .project .projectDetail .projectImage img
+    {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .project .projectDetail .projectSummary
+    {
+        width: 50%;
+        position: relative;
+        float: left;
+    }
+
+    .project>.projectDetail>.projectSummary>div
+    {
+        margin: 0;
+        padding: 0 10px;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .project>.projectDetail>.projectSummary>div>div
+    {
+        padding: 20px;
+    }
+    .project>.projectDetail>.projectSummary .projectSummaryTitles
+    {
+        font-size: 16px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+
+    .project>.projectDetail>.projectSummary .projectSummaryDescription
+    {
+        font-size: 14px;
+        word-wrap: break-word;
+    }
+}
+  
+/* Desktop Styles */
+@media only screen and (min-width: 1600px) {
+    .project
+    {
+        margin: 160px 10px;
+    }
+
+    .project .titleContainer
+    {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .project .titleContainer .title
+    {
+        font-size: 48px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        font-weight: bold;
+        padding-bottom: 50px;
+    }
+    .project .titleContainer .description
+    {
+        font-size: 24px;
+        font-family: 'Thasadith', sans-serif;
+        color:#3a484f;
+        padding-bottom: 50px;
+    }
+
+    .project .carouselContainer
+    {
+        width: 90%;
+        margin: 0px 70px;
+        padding-bottom: 100px;
+    }
+
+    .project .projectDetail
+    {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .project .projectDetail .projectImage
+    {
+        width: 50%;
+        position: relative;
+        float: left;
+    }
+
+    .project .projectDetail .projectImage img
+    {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .project .projectDetail .projectSummary
+    {
+        width: 50%;
+        position: relative;
+        float: left;
+    }
+
+    .project>.projectDetail>.projectSummary>div
+    {
+        margin: 0;
+        padding: 0 10px;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .project>.projectDetail>.projectSummary>div>div
+    {
+        padding: 20px;
+    }
+    .project>.projectDetail>.projectSummary .projectSummaryTitles
+    {
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+
+    .project>.projectDetail>.projectSummary .projectSummaryDescription
+    {
+        font-size: 16px;
+        word-wrap: break-word;
+    }
 }
