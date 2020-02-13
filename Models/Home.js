@@ -1,52 +1,27 @@
 // database
+const sql = require('mssql')
 var db = require('../SQLCONFIG.js');
 
-const { Connection } = require("tedious");
-// Create connection to database
-const config = {
-  authentication: {
-    options: {
-      userName: db.userName, // update me
-      password: db.password // update me
-    },
-    type: "default"
-  },
-  server: db.server.toString(), // update me
-  options: {
-    database: db.dbname, //update me
-    encrypt: true
-  }
-};
-
-const connection = new Connection(config);
-
-
-var Request = require('tedious').Request;  
-var TYPES = require('tedious').TYPES;  
-
-module.exports.combineHome = async function()
-{
-  console.log("combine called")
-  
-  request = new Request('select * from title', (err, rowCount) => {
-    if (err) {
-      console.error(err.message);
-    } 
+(async () =>{
+  sql.connect(db,(err)=>{
+    if(err)
+    {
+      console.log("ERROR : "+err)
+      return
+    }
+    console.log("Successfully connected to DB")
   })
-  var result = "";  
-        request.on('row', function(columns) {  
-            columns.forEach(function(column) {  
-              if (column.value === null) {  
-                console.log('NULL');  
-              } else {  
-                result+= column.value + " ";  
-              }  
-            });  
-            console.log(result);  
-            result ="";  
-        });  
-        request.on('done', function(rowCount, more) {  
-        console.log(rowCount + ' rows returned');  
-        });  
-  connection.execSql(request);
-} 
+})()
+
+module.exports.combineHome = async ()=>{
+  try{
+    let result = await new sql.Request().query("select * from title").then((data)=>{
+      console.log("Successfully retreived data")
+      return data
+    })
+    return result
+  }catch(err)
+  {
+    console.log(err)
+  }
+}

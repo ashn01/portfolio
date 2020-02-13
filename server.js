@@ -13,14 +13,17 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 app.get('/home', (req, res) => {
     console.log("/home called "+path.join(__dirname, '/build', 'index.html'))
     res.sendFile(path.join(__dirname, '/build', 'index.html'));
+    //res.sendFile(path.join(__dirname, '/public', 'index.html'));
 });
 
 app.get('/projects',(req,res)=>{
     console.log("projects requested")
-    dbHome.combineHome().then(
-        console.log('hello')
-    )
-    res.send('Hello world')
+    dbHome.combineHome().then((data)=>
+    {
+        res.send(data[0])
+    }).catch((err)=>{
+        console.log(err)
+    })
 })
 
 app.get('/*', (req, res) => {
