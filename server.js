@@ -16,11 +16,21 @@ app.get('/home', (req, res) => {
     //res.sendFile(path.join(__dirname, '/public', 'index.html'));
 });
 
-app.get('/projects',(req,res)=>{
-    console.log("projects requested")
-    dbHome.combineHome().then((data)=>
+app.get('/intro',(req,res)=>{
+    console.log("intro requested")
+    dbHome.getIntro().then((data)=>
     {
         res.send(data[0])
+    }).catch((err)=>{
+        console.log(err)
+    })
+})
+
+app.get('/projects',(req,res)=>{
+    console.log("projects requested")
+    dbHome.getProjects().then((data)=>
+    {
+        res.send(data)
     }).catch((err)=>{
         console.log(err)
     })

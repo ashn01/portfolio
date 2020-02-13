@@ -4,7 +4,7 @@ import Title from './HomeContents/Title'
 import Links from './HomeContents/Links'
 import Projets from './HomeContents/Projects'
 
-import { getServer, HOME } from '../../APIROUTE'
+import { getServer, INTRO, PROJECTS } from '../../APIROUTE'
 
 import '../../css/Home.css'
 
@@ -18,13 +18,17 @@ export default class Body extends React.PureComponent
                 id: 0,
                 title : "",
                 descriptions : ""
-            }
+            },
+            projects : []
         }
     }
     componentDidMount()
     {
-        getServer(HOME).then((res)=>{
+        getServer(INTRO).then((res)=>{
             this.setState({intro : res.data})
+        })
+        getServer(PROJECTS).then((res)=>{
+            this.setState({projects : res.data},()=>console.log(this.state.projects))
         })
     }
     render()
@@ -32,8 +36,8 @@ export default class Body extends React.PureComponent
         return (
             <div className="home">
                 <Title intro={this.state.intro}/>
-                <Links/>
-                <Projets/>
+                <Links />
+                <Projets projects={this.state.projects}/>
             </div>
         )
     }
