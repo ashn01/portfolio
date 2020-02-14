@@ -1,5 +1,9 @@
 @import url("fonts.css");
 
+.home .projectItem:hover
+{
+    opacity: 0.9;
+}
 
 /* Mobile Styles */
 @media only screen and (max-width: 749px) {
@@ -143,10 +147,6 @@
     align-items: center;
 }
 
-.home .projectItem:hover
-{
-    opacity: 0.8;
-}
 
 .home .projectTitle
 {
@@ -322,10 +322,7 @@
     align-items: center;
 }
 
-.home .projectItem:hover
-{
-    opacity: 0.8;
-}
+
 
 .home .projectTitle
 {
@@ -501,10 +498,6 @@
         align-items: center;
     }
     
-    .home .projectItem:hover
-    {
-        opacity: 0.8;
-    }
     
     .home .projectTitle
     {

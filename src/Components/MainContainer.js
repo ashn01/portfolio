@@ -21,7 +21,7 @@ export default class MainContainer extends React.PureComponent
         {
             case 'home' : return <Home/>
             case 'about' : return <About/>
-            case 'project' : return <Project/>
+            case 'project' : return <Project params={this.props.id}/>
             default : return null
         }
     }

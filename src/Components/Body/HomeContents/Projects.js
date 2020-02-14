@@ -8,6 +8,7 @@ export default class Projects extends React.PureComponent
     constructor(props)
     {
         super(props)
+        console.log(props)
     }
     dummydata()
     {
@@ -35,17 +36,17 @@ export default class Projects extends React.PureComponent
                         this.props.projects.sort((a,b)=> a.priority-b.priority).map((v,i)=>{
                             return (
                                 <div key={i} className={`projectScale${v.scale}`}>
-                                    <img src={process.env.PUBLIC_URL + "/" + v.imgsrc} alt={v.description} className="projectImg"/>
+                                    <img src={process.env.PUBLIC_URL + "images/" + v.imgsrc[0].path} alt={v.descriptions} className="projectImg"/>
                                     <div className="projectItem">
                                         <div>
                                             <div className="projectTitle">
                                                 {v.name}
                                             </div>
                                             <div className="projectDescription">
-                                                {v.description}
+                                                {v.descriptions}
                                             </div>
                                             <div className="projectLink">
-                                                <Link to={`/project:${v.id}`} >View Detail</Link>
+                                                <Link to={`/project/${v.id}`} >View Detail</Link>
                                             </div>
                                         </div>
                                     </div>
