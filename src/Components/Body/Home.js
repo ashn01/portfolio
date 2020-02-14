@@ -28,7 +28,7 @@ export default class Body extends React.PureComponent
             this.setState({intro : res.data})
         })
         getServer(PROJECTS).then((res)=>{
-            this.setState({projects : res.data},()=>console.log(this.state.projects))
+            this.setState({projects : res.data})
         })
     }
     render()

@@ -41,16 +41,18 @@ app.get('/projects',(req,res)=>{
                 ret = JSON.parse(v[key])
             }
         })
-        
+        ret.map((v,i)=>{
+            v.imgsrc = JSON.parse(v.imgsrc)
+        })
         res.send(ret)
     }).catch((err)=>{
         console.log(err)
     })
 })
 
-app.get('/projectDetail/:id',(req,res)=>{
-    console.log("project with "+req.params.id+" requested")
-    var id = req.params.id
+app.get('/projectDetail',(req,res)=>{
+    console.log("project with "+req.query.id+" requested")
+    var id = req.query.id
     dbHome.getProject(id).then((data)=>
     {
         var ret
@@ -60,15 +62,15 @@ app.get('/projectDetail/:id',(req,res)=>{
                 ret = JSON.parse(v[key])
             }
         })
-
-        res.send(ret)
+        console.log(ret[0])
+        res.send(ret[0])
     }).catch((err)=>{
         console.log(err)
     })
 })
 
 app.get('/*', (req, res) => {
-    console.log(req.param)
-    console.log("/* called "+path.join(__dirname, '/build', 'index.html'))
+    console.log(req.query.name);
+    //console.log("/* called "+path.join(__dirname, '/build', 'index.html'))
     res.sendFile(path.join(__dirname, '/build', 'index.html'));
 });

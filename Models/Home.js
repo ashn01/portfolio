@@ -49,9 +49,17 @@ module.exports.getProjects = async ()=>{
         p.scale, 
         p.priority, 
         t.team, 
-        (select imgsrc as "path" from images i, projects pn where pn.id = i.prjRef and pn.id = p.id for json path) as "imgsrc"
-    from    projects p ,  team t
-    where   t.id = p.team
+        CONCAT('["',STRING_AGG(imgsrc,'", "'),'"]') as "imgsrc"
+    from    projects p ,  
+        team t, images i
+    where   t.id = p.team and p.id = i.prjRef
+    group by 
+        p.id, 
+        p.name, 
+        p.descriptions, 
+        p.scale, 
+        p.priority, 
+        t.team
     FOR JSON PATH
     `).then((data)=>{
       
@@ -76,9 +84,9 @@ module.exports.getProject = async (id)=>{
         p.priority, 
         t.team,
         p.period, 
-        (select imgsrc as "path" from images i, projects pn where pn.id = i.prjRef and pn.id = p.id for json path) as "imgsrc",
-        (select types as "type" from types t, prj_types_bridge ptb where p.id = ptb.prjRef and t.id = ptb.typesRef for json path) as "types",
-        (select role as "role" from roles r, prj_roles_bridge prb where p.id = prb.prjRef and r.id = prb.rolesRef for json path) as "roles"
+        JSON_QUERY((SELECT CONCAT('["',STRING_AGG([imgsrc], '","'),'"]') FROM images i, projects pn where pn.id = i.prjRef and pn.id = p.id)) as "imgsrc",
+        JSON_QUERY((SELECT CONCAT('["',STRING_AGG([types], '","'),'"]') FROM types t, prj_types_bridge ptb where p.id = ptb.prjRef and t.id = ptb.typesRef)) as "types",
+        JSON_QUERY((SELECT CONCAT('["',STRING_AGG([role], '","'),'"]') FROM roles r, prj_roles_bridge prb where p.id = prb.prjRef and r.id = prb.rolesRef)) as "roles"
     from    projects p ,  team t
     where   t.id = p.team and p.id = ${id}
     FOR JSON PATH

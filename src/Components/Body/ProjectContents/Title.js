@@ -10,10 +10,10 @@ export default class Title extends React.PureComponent
         return(
             <div className="titleContainer">
                 <div className="title">
-                    {this.props.project.title}
+                    {this.props.project.name}
                 </div>
                 <div className="description">
-                    {this.props.project.description}
+                    {this.props.project.descriptions}
                 </div>
             </div>
         )

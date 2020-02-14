@@ -3,7 +3,14 @@ import React from 'react'
 
 export default class ProjectDetail extends React.PureComponent
 {
-    
+    constructor(props)
+    {
+        super(props)
+    }
+    componentDidMount()
+    {
+        console.log(this.props.project)
+    }
     render()
     {
         return (
@@ -18,7 +25,9 @@ export default class ProjectDetail extends React.PureComponent
                                 Project Type
                             </div>
                             <div className="projectSummaryDescription">
-                                {this.props.project.type}
+                                {this.props.project.types.map((v,i)=>{
+                                    return <div key={i}>{v}</div>
+                                })}
                             </div>
                         </div>
                         <div>
@@ -26,7 +35,9 @@ export default class ProjectDetail extends React.PureComponent
                                 My Role
                             </div>
                             <div className="projectSummaryDescription">
-                                {this.props.project.role}
+                                {this.props.project.roles.map((v,i)=>{
+                                    return <div key={i}>{v}</div>
+                                })}
                             </div>
                         </div>
                         <div>
