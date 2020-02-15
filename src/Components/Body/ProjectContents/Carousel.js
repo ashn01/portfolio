@@ -7,22 +7,28 @@ import '../../../css/animate.css'
 
 export default class Carousel extends React.PureComponent
 {
+    componentDidUpdate(prevProps, prevState)
+    {
+        console.log(this.props)
+        console.log(prevProps)
+    }
     render()
     {
         return (
             <div className="carouselContainer">
-                <OwlCarousel className="owl-theme" loop margin={20} items={1} autoplay={true} 
+                
+                { this.props.project.imgsrc.length && (
+                    <OwlCarousel className="owl-theme" loop margin={20} items={1} autoplay={true} 
                         autoplayHoverPause={true} animateIn="fadeIn" animateOut="fadeOut" mouseDrag={true} touchDrag={true}>
                             {
                                 this.props.project.imgsrc.map((v,i)=>{
-                                    console.log(process.env.PUBLIC_URL + "/images/" +v)
                                     return (
                                         <img key={i} alt={i} src={process.env.PUBLIC_URL + "/images/" +v}/>
                                     )
                                 })
                             }
-                            <img alt="i" src={process.env.PUBLIC_URL + "/images/1/empty.png"}/>
-                </OwlCarousel>
+                    </OwlCarousel>)
+                }
             </div>
         )
     }
