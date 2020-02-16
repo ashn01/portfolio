@@ -14,6 +14,7 @@ export default class Project extends React.PureComponent
     {
         super(props)
         this.state = {
+            isLoaded : false,
             project : {
                 id: 1,
                 name: "",
@@ -32,7 +33,7 @@ export default class Project extends React.PureComponent
     {
         window.scrollTo(0, 0) // reset scroll to Top
         getServerWithParams(PROJECTDETAIL,this.props.params).then((res)=>{
-            this.setState({project:res.data})
+            this.setState({isLoaded:true, project:res.data})
         })
 
     }
@@ -40,9 +41,14 @@ export default class Project extends React.PureComponent
     {
         return (
             <div className="project">
-                <Title project={this.state.project}/>
-                <Carousel project={this.state.project}/>
-                <ProjectDetail project={this.state.project}/>
+                {
+                    this.state.isLoaded &&
+                    <div>
+                        <Title project={this.state.project}/>
+                        <Carousel project={this.state.project}/>
+                        <ProjectDetail project={this.state.project}/>
+                    </div>
+                }
             </div>
         )
     }

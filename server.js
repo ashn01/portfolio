@@ -7,11 +7,9 @@ const dbHome = require('./Models/Home')
 
 
 app.use(express.static(path.join(__dirname, '/build')));
-//app.use(express.static(path.join(__dirname, '/src')));
 
 app.use(express.static(path.join(__dirname, '/public')));
 
-// console.log that your server is up and running
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
 app.get('/home', (req, res) => {
@@ -62,7 +60,6 @@ app.get('/projectDetail',(req,res)=>{
                 ret = JSON.parse(v[key])
             }
         })
-        console.log(ret[0])
         res.send(ret[0])
     }).catch((err)=>{
         console.log(err)

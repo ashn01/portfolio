@@ -5,6 +5,14 @@
     opacity: 0.9;
 }
 
+.linkArrow
+{
+    width: 7px;
+    height: 7px;
+    transform: translateY(-10%);
+    padding: 0px 3px;
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 749px) {
     .home
@@ -65,13 +73,14 @@
     font-family: 'Cutive Mono', monospace;
     font-size: 14px;
     color: #3f484f;
+    padding-left: 3px;
 }
 
 .home .linkItem a:hover
 {
     text-decoration: none;
     color:white;
-    background-color: black;
+    background-color: #3f484f;
 }
 
 /* Projects */
@@ -240,13 +249,14 @@
     font-family: 'Cutive Mono', monospace;
     font-size: 16px;
     color: #3f484f;
+    padding-left: 3px;
 }
 
 .home .linkItem a:hover
 {
     text-decoration: none;
     color:white;
-    background-color: black;
+    background-color: #3f484f;
 }
 
 /* Projects */
@@ -416,13 +426,14 @@
         font-family: 'Cutive Mono', monospace;
         font-size: 16px;
         color: #3f484f;
+        padding-left: 3px;
     }
     
     .home .linkItem a:hover
     {
         text-decoration: none;
         color:white;
-        background-color: black;
+        background-color: #3f484f;
     }
     
     /* Projects */
