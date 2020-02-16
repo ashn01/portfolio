@@ -55,10 +55,10 @@ export default class Navigation extends React.PureComponent
                     </ul>
                     <div className="navIcons">
                         <a href="https://www.linkedin.com/in/youngmin-kim-429b88140" target="_blank" rel="noopener noreferrer">
-                            <img src={process.env.PUBLIC_URL + "/linkedin.png"} alt="linkedin"/>
+                            <img src={process.env.PUBLIC_URL + "/linkedinNav.png"} alt="linkedin"/>
                         </a>
                         <a href="https://github.com/ashn01" target="_blank" rel="noopener noreferrer">
-                            <img src={process.env.PUBLIC_URL + "/github.png"} alt="github"/>
+                            <img src={process.env.PUBLIC_URL + "/githubNav.png"} alt="github"/>
                         </a>
                     </div>
                 </div>
