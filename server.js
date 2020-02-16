@@ -6,13 +6,9 @@ const port = process.env.PORT || 3000;
 const dbHome = require('./Models/Home')
 
 
-app.use(express.static(path.join(__dirname, '/build')));
-
 app.use(express.static(path.join(__dirname, '/public')));
 
-var server = http.createServer(app);
-server.listen(port)
-//app.listen(port, () => console.log(`Listening on port ${port}`));
+app.listen(port, () => console.log(`Listening on port ${port}`));
 
 app.get('/home', (req, res) => {
     res.sendFile(path.join(__dirname, '/build', 'index.html'));
@@ -25,7 +21,7 @@ app.get('/intro',(req,res)=>{
     {
         res.send(data[0])
     }).catch((err)=>{
-        console.log(err)
+        console.error(err)
     })
 })
 
@@ -46,7 +42,7 @@ app.get('/projects',(req,res)=>{
         })
         res.send(ret)
     }).catch((err)=>{
-        console.log(err)
+        console.error(err)
     })
 })
 
@@ -64,7 +60,7 @@ app.get('/projectDetail',(req,res)=>{
         })
         res.send(ret[0])
     }).catch((err)=>{
-        console.log(err)
+        console.error(err)
     })
 })
 
