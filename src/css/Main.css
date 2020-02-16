@@ -3,6 +3,7 @@
     transition: transform 0.5s;
     transition-duration: 0.5s;
     overflow: auto;
+    min-height: calc(100vh - 220px);
 }
 
 .main.active
