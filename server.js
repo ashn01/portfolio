@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 
 const dbHome = require('./Models/Home')
 
@@ -10,7 +10,9 @@ app.use(express.static(path.join(__dirname, '/build')));
 
 app.use(express.static(path.join(__dirname, '/public')));
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
+var server = http.createServer(app);
+server.listen(port)
+//app.listen(port, () => console.log(`Listening on port ${port}`));
 
 app.get('/home', (req, res) => {
     res.sendFile(path.join(__dirname, '/build', 'index.html'));
