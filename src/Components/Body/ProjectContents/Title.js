@@ -4,19 +4,16 @@ import '../../../css/Home.css'
 
 export default class Title extends React.PureComponent
 {
-    constructor(props)
-    {
-        super(props)
-    }
+    
     render()
     {
         return(
             <div className="titleContainer">
                 <div className="title">
-                    {this.props.project.title}
+                    {this.props.project.name}
                 </div>
                 <div className="description">
-                    {this.props.project.description}
+                    {this.props.project.descriptions}
                 </div>
             </div>
         )

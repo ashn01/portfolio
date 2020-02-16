@@ -7,32 +7,43 @@ export default class ProjectDetail extends React.PureComponent
     {
         super(props)
     }
+    componentDidMount()
+    {
+        console.log(this.props.project)
+    }
     render()
     {
         return (
             <div className="projectDetail">
                 <div className="projectImage">
-                    <img src="https://i.stack.imgur.com/GA6bB.png"/>
+                    <img src="https://i.stack.imgur.com/GA6bB.png" alt="project"/>
                 </div>
                 <div className="projectSummary">
                     <div>
                         <div>
+                            <div className="projectBar"/>
                             <div className="projectSummaryTitles">
                                 Project Type
                             </div>
                             <div className="projectSummaryDescription">
-                                {this.props.project.type}
+                                {this.props.project.types.map((v,i)=>{
+                                    return <div key={i}>{v}</div>
+                                })}
                             </div>
                         </div>
                         <div>
+                            <div className="projectBar"/>
                             <div className="projectSummaryTitles">
                                 My Role
                             </div>
                             <div className="projectSummaryDescription">
-                                {this.props.project.role}
+                                {this.props.project.roles.map((v,i)=>{
+                                    return <div key={i}>{v}</div>
+                                })}
                             </div>
                         </div>
                         <div>
+                            <div className="projectBar"/>
                             <div className="projectSummaryTitles">
                                 Period
                             </div>
@@ -41,6 +52,7 @@ export default class ProjectDetail extends React.PureComponent
                             </div>
                         </div>
                         <div>
+                            <div className="projectBar"/>
                             <div className="projectSummaryTitles">
                                 Team
                             </div>

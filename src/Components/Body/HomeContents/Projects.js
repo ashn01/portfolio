@@ -8,15 +8,7 @@ export default class Projects extends React.PureComponent
     constructor(props)
     {
         super(props)
-        this.state = {
-            projects : []
-        }
     }
-    componentDidMount()
-    {
-        this.dummydata()
-    }
-
     dummydata()
     {
         var arr=[]
@@ -34,27 +26,26 @@ export default class Projects extends React.PureComponent
         }
         this.setState({projects:arr})
     }
-
     render()
     {
         return (
             <div className="projects">
                 <div className="projectGridContainer">
                     {
-                        this.state.projects.sort((a,b)=> a.priority-b.priority).map((v,i)=>{
+                        this.props.projects.sort((a,b)=> a.priority-b.priority).map((v,i)=>{
                             return (
                                 <div key={i} className={`projectScale${v.scale}`}>
-                                    <img src={v.imgsrc} alt={v.description} className="projectImg"/>
+                                    <img src={process.env.PUBLIC_URL + "images/" + v.imgsrc[0]} alt={v.descriptions} className="projectImg"/>
                                     <div className="projectItem">
                                         <div>
                                             <div className="projectTitle">
                                                 {v.name}
                                             </div>
                                             <div className="projectDescription">
-                                                {v.description}
+                                                {v.descriptions}
                                             </div>
                                             <div className="projectLink">
-                                                <Link to={`/project:${i}`} >View Detail</Link>
+                                                <Link to={`/project/${v.id}`} >View Detail</Link>
                                             </div>
                                         </div>
                                     </div>
