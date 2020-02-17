@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 const dbHome = require('./Models/Home')
 
 
-app.use(express.static(path.join(__dirname, '/public')));
+app.use('/', express.static(path.join(__dirname, '/build')));
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
