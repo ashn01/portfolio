@@ -19,7 +19,8 @@ export default class Body extends React.PureComponent
                 title : "",
                 descriptions : ""
             },
-            projects : []
+            projects : [],
+            isLoaded : false
         }
     }
     componentDidMount()
@@ -28,7 +29,7 @@ export default class Body extends React.PureComponent
             this.setState({intro : res.data})
         })
         getServer(PROJECTS).then((res)=>{
-            this.setState({projects : res.data})
+            this.setState({projects : res.data, isLoaded : true})
         })
     }
     render()

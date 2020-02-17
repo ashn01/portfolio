@@ -32,6 +32,7 @@ export default class Projects extends React.PureComponent
             <div className="projects">
                 <div className="projectGridContainer">
                     {
+                        this.props.isLoaded && 
                         this.props.projects.sort((a,b)=> a.priority-b.priority).map((v,i)=>{
                             return (
                                 <div key={i} className={`projectScale${v.scale}`}>
