@@ -30,7 +30,6 @@ app.get('/projects',(req,res)=>{
     dbHome.getProjects().then((data)=>
     {
         var ret
-        
         data.map((v,i)=>{
             for(key in v)
             {

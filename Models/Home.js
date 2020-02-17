@@ -2,27 +2,35 @@
 const sql = require('mssql')
 var db = require('../SQLCONFIG.js');
 
-(async () =>{
-  sql.connect(db,(err)=>{
-    if(err)
-    {
-      console.error("ERROR : "+err)
-      return
-    }
+async function connectDB(){
+  const pool = new sql.ConnectionPool(db)
+  
+  try{
+    await pool.connect()
     console.log("Successfully connected to DB")
-  })
-})()
+    return pool
+  }catch(err)
+  {
+    console.error("ERROR : "+err)
+    return err
+  }
+}
 
 module.exports.getIntro = async ()=>{
+  const database = await connectDB();
   try{
-    let result = await new sql.Request().query("select * from title").then((data)=>{
+    let result = await database.request().query("select * from title").then((data)=>{
       console.log("Successfully retreived data")
-      return data
+      return data.recordset
     })
     return result
   }catch(err)
   {
     console.error(err)
+  }
+  finally
+  {
+    database.close()
   }
 }
 /*
@@ -40,8 +48,9 @@ module.exports.getIntro = async ()=>{
     FOR JSON PATH
 */
 module.exports.getProjects = async ()=>{
+  const database = await connectDB();
   try{
-    let result = await new sql.Request().query(`
+    let result = await database.request().query(`
     select 
         p.id, 
         p.name, 
@@ -63,19 +72,24 @@ module.exports.getProjects = async ()=>{
     FOR JSON PATH
     `).then((data)=>{
       
-      return data
+      return data.recordset
     })
     return result
   }catch(err)
   {
     console.error(err)
   }
+  finally
+  {
+    database.close()
+  }
 }
 
 module.exports.getProject = async (id)=>{
+  const database = await connectDB();
   try{
     console.log("ID:"+id)
-    let result = await new sql.Request().query(`
+    let result = await database.request().query(`
     select 
         p.id, 
         p.name, 
@@ -92,11 +106,15 @@ module.exports.getProject = async (id)=>{
     FOR JSON PATH
     `).then((data)=>{
       
-      return data
+      return data.recordset
     })
     return result
   }catch(err)
   {
     console.error(err)
+  }
+  finally
+  {
+    database.close();
   }
 }
