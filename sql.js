@@ -6,14 +6,14 @@ const { Connection, Request } = require("tedious");
 const config = {
   authentication: {
     options: {
-      userName: db.info.userName, // update me
-      password: db.info.password // update me
+      userName: db.userName, // update me
+      password: db.password // update me
     },
     type: "default"
   },
-  server: db.info.server.toString(), // update me
+  server: db.server.toString(), // update me
   options: {
-    database: db.info.dbname, //update me
+    database: db.dbname, //update me
     encrypt: true
   }
 };
