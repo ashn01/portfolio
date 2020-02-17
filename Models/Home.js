@@ -6,7 +6,7 @@ var db = require('../SQLCONFIG.js');
   sql.connect(db,(err)=>{
     if(err)
     {
-      console.log("ERROR : "+err)
+      console.error("ERROR : "+err)
       return
     }
     console.log("Successfully connected to DB")
@@ -22,7 +22,7 @@ module.exports.getIntro = async ()=>{
     return result
   }catch(err)
   {
-    console.log(err)
+    console.error(err)
   }
 }
 /*
@@ -68,7 +68,7 @@ module.exports.getProjects = async ()=>{
     return result
   }catch(err)
   {
-    console.log(err)
+    console.error(err)
   }
 }
 
@@ -97,6 +97,6 @@ module.exports.getProject = async (id)=>{
     return result
   }catch(err)
   {
-    console.log(err)
+    console.error(err)
   }
 }
