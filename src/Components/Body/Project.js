@@ -33,7 +33,14 @@ export default class Project extends React.PureComponent
     {
         window.scrollTo(0, 0) // reset scroll to Top
         getServerWithParams(PROJECTDETAIL,this.props.params).then((res)=>{
-            this.setState({isLoaded:true, project:res.data})
+            var ret
+            res.data.map((v,i)=>{
+                for(var key in v)
+                {
+                    ret = JSON.parse(v[key])
+                }
+            })
+            this.setState({isLoaded:true, project:ret[0]})
         })
 
     }

@@ -5,10 +5,6 @@ import '../../../css/Home.css'
 
 export default class Projects extends React.PureComponent
 {
-    constructor(props)
-    {
-        super(props)
-    }
     dummydata()
     {
         var arr=[]
