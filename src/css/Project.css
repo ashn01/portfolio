@@ -1,0 +1,400 @@
+
+
+
+.projectBar
+{
+    width: 20px;
+    height: 2px;
+    background-color: #4fcdae;
+}
+
+.owl-theme .owl-dots .owl-dot.active span
+{
+    background-color: #4fcdae;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 636px) {
+    /* owl */
+    .owl-theme .owl-dots .owl-dot span
+    {
+        width: 6px;
+        height: 6px;
+        margin: 5px 3px;
+    }
+
+    .project
+    {
+        margin: 80px 10px;
+    }
+
+    .project .titleContainer
+    {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .project .titleContainer .title
+    {
+        font-size: 36px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        font-weight: bold;
+        padding-bottom: 50px;
+    }
+    .project .titleContainer .description
+    {
+        font-size: 24px;
+        font-family: 'Thasadith', sans-serif;
+        color:#3a484f;
+        padding-bottom: 50px;
+    }
+
+    .project .carouselContainer
+    {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+
+    .project .projectDetail
+    {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        overflow: auto;
+    }
+
+    .project .projectDetail .projectImage
+    {
+        width: 100%;
+        position: relative;
+        float: left;
+        padding-bottom: 50px;
+    }
+
+    .project .projectDetail .projectImage img
+    {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .project .projectDetail .projectSummary
+    {
+        width: 100%;
+        position: relative;
+        float: left;
+    }
+
+    .projectDetail>.projectSummary>div
+    {
+        margin: 0 auto;
+        padding: 0 10px;
+        position: relative;
+    }
+    .projectDetail>.projectSummary>div>div
+    {
+        padding: 15px;
+    }
+    .projectDetail>.projectSummary .projectSummaryTitles
+    {
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+
+    .projectDetail>.projectSummary .projectSummaryDescription
+    {
+        font-size: 20px;
+        word-wrap: break-word;
+    }
+}
+  /* Tablet Styles */
+@media only screen and (min-width: 637px) and (max-width: 901px) {
+    .project
+    {
+        margin: 80px 10px;
+    }
+
+    .project .titleContainer
+    {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .project .titleContainer .title
+    {
+        font-size: 40px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        font-weight: bold;
+        padding-bottom: 50px;
+    }
+    .project .titleContainer .description
+    {
+        font-size: 20px;
+        font-family: 'Thasadith', sans-serif;
+        color:#3a484f;
+        padding-bottom: 50px;
+    }
+
+    .project .carouselContainer
+    {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 150px;
+    }
+
+    .project .projectDetail
+    {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .project .projectDetail .projectImage
+    {
+        width: 50%;
+        position: relative;
+        float: left;
+    }
+
+    .project .projectDetail .projectImage img
+    {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .project .projectDetail .projectSummary
+    {
+        width: 50%;
+        position: relative;
+        float: left;
+    }
+
+    .projectDetail>.projectSummary>div
+    {
+        margin: 0;
+        padding-left:80px;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .projectDetail>.projectSummary>div>div
+    {
+        padding: 20px;
+    }
+    .projectDetail>.projectSummary .projectSummaryTitles
+    {
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+
+    .projectDetail>.projectSummary .projectSummaryDescription
+    {
+        font-size: 14px;
+        word-wrap: break-word;
+    }
+}
+/* Tablet Styles */
+@media only screen and (min-width: 902px) and (max-width: 1599px) {
+    .project
+    {
+        margin: 80px 10px;
+    }
+
+    .project .titleContainer
+    {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .project .titleContainer .title
+    {
+        font-size: 40px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        font-weight: bold;
+        padding-bottom: 50px;
+    }
+    .project .titleContainer .description
+    {
+        font-size: 20px;
+        font-family: 'Thasadith', sans-serif;
+        color:#3a484f;
+        padding-bottom: 50px;
+    }
+
+    .project .carouselContainer
+    {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 150px;
+    }
+
+    .project .projectDetail
+    {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .project .projectDetail .projectImage
+    {
+        width: 50%;
+        position: relative;
+        float: left;
+    }
+
+    .project .projectDetail .projectImage img
+    {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .project .projectDetail .projectSummary
+    {
+        width: 50%;
+        position: relative;
+        float: left;
+    }
+
+    .projectDetail>.projectSummary>div
+    {
+        margin: 0;
+        padding: 0 100px;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .projectDetail>.projectSummary>div>div
+    {
+        padding: 20px;
+    }
+    .projectDetail>.projectSummary .projectSummaryTitles
+    {
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+
+    .projectDetail>.projectSummary .projectSummaryDescription
+    {
+        font-size: 18px;
+        word-wrap: break-word;
+    }
+}
+  
+/* Desktop Styles */
+@media only screen and (min-width: 1600px) {
+    .project
+    {
+        margin: 160px 30px;
+    }
+
+    .project .titleContainer
+    {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .project .titleContainer .title
+    {
+        font-size: 48px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        font-weight: bold;
+        padding-bottom: 50px;
+    }
+    .project .titleContainer .description
+    {
+        font-size: 24px;
+        font-family: 'Thasadith', sans-serif;
+        color:#3a484f;
+        padding-bottom: 50px;
+    }
+
+    .project .carouselContainer
+    {
+        width: 90%;
+        margin: 0px 70px;
+        padding-bottom: 100px;
+    }
+
+    .project .projectDetail
+    {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .project .projectDetail .projectImage
+    {
+        width: 50%;
+        position: relative;
+        float: left;
+    }
+
+    .project .projectDetail .projectImage img
+    {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .project .projectDetail .projectSummary
+    {
+        width: 50%;
+        position: relative;
+        float: left;
+    }
+
+    .projectDetail>.projectSummary>div
+    {
+        margin: 0;
+        padding: 0 200px;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .projectDetail>.projectSummary>div>div
+    {
+        padding: 20px;
+    }
+    .projectDetail>.projectSummary .projectSummaryTitles
+    {
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+
+    .projectDetail>.projectSummary .projectSummaryDescription
+    {
+        font-size: 18px;
+        word-wrap: break-word;
+    }
+}
