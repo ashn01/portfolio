@@ -19,7 +19,8 @@ export default class Body extends React.PureComponent
                 title : "",
                 descriptions : ""
             },
-            projects : []
+            projects : [],
+            isLoaded : false
         }
     }
     componentDidMount()
@@ -44,7 +45,7 @@ export default class Body extends React.PureComponent
             })
             this.setState({projects : ret})
         }).catch((err)=>{
-            console.log("ERROR : "+err)
+            console.log("ERROR : "+err
         })
     }
     render()
