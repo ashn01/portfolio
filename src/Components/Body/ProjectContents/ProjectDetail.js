@@ -3,14 +3,6 @@ import React from 'react'
 
 export default class ProjectDetail extends React.PureComponent
 {
-    constructor(props)
-    {
-        super(props)
-    }
-    componentDidMount()
-    {
-        console.log(this.props.project)
-    }
     render()
     {
         return (
