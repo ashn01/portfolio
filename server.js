@@ -21,7 +21,7 @@ app.get('/intro',(req,res)=>{
     {
         res.send(data[0])
     }).catch((err)=>{
-        console.error(err)
+        console.error("error : "+err)
     })
 })
 
@@ -42,7 +42,7 @@ app.get('/projects',(req,res)=>{
         })
         res.send(ret)
     }).catch((err)=>{
-        console.error(err)
+        console.error("error : "+err)
     })
 })
 
@@ -60,7 +60,7 @@ app.get('/projectDetail',(req,res)=>{
         })
         res.send(ret[0])
     }).catch((err)=>{
-        console.error(err)
+        console.error("error : "+err)
     })
 })
 

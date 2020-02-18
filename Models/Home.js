@@ -20,13 +20,13 @@ module.exports.getIntro = async ()=>{
   const database = await connectDB();
   try{
     let result = await database.request().query("select * from title").then((data)=>{
-      console.log("Successfully retreived data")
+      console.log("Successfully retreived intro")
       return data.recordset
     })
     return result
   }catch(err)
   {
-    console.error(err)
+    console.error("error : "+err)
   }
   finally
   {
@@ -71,13 +71,14 @@ module.exports.getProjects = async ()=>{
         t.team
     FOR JSON PATH
     `).then((data)=>{
+      console.log("Successfully retreived projects")
       
       return data.recordset
     })
     return result
   }catch(err)
   {
-    console.error(err)
+    console.error("error : "+err)
   }
   finally
   {
@@ -105,13 +106,14 @@ module.exports.getProject = async (id)=>{
     where   t.id = p.team and p.id = ${id}
     FOR JSON PATH
     `).then((data)=>{
+      console.log("Successfully retreived project id :"+id)
       
       return data.recordset
     })
     return result
   }catch(err)
   {
-    console.error(err)
+    console.error("error : "+err)
   }
   finally
   {

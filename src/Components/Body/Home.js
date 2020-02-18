@@ -26,9 +26,13 @@ export default class Body extends React.PureComponent
     {
         getServer(INTRO).then((res)=>{
             this.setState({intro : res.data})
+        }).catch((err)=>{
+            console.log("ERRPR : "+err)
         })
         getServer(PROJECTS).then((res)=>{
             this.setState({projects : res.data})
+        }).catch((err)=>{
+            console.log("ERRPR : "+err)
         })
     }
     render()
