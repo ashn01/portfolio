@@ -27,12 +27,24 @@ export default class Body extends React.PureComponent
         getServer(INTRO).then((res)=>{
             this.setState({intro : res.data})
         }).catch((err)=>{
-            console.log("ERRPR : "+err)
+            console.log("ERROR : "+err)
+            this.setState({intro:{id:0, title:"Sorry", descriptions:"Web page is experiencing difficulty accessing server"}})
         })
+
         getServer(PROJECTS).then((res)=>{
-            this.setState({projects : res.data})
+            var ret
+            res.data.map((v,i)=>{
+                for(var key in v)
+                {
+                    ret = JSON.parse(v[key])
+                }
+            })
+            ret.map((v,i)=>{
+                v.imgsrc = JSON.parse(v.imgsrc)
+            })
+            this.setState({projects : ret})
         }).catch((err)=>{
-            console.log("ERRPR : "+err)
+            console.log("ERROR : "+err)
         })
     }
     render()
