@@ -25,6 +25,7 @@ export default class Body extends React.PureComponent
     }
     componentDidMount()
     {
+        window.scrollTo(0, 0) // reset scroll to Top
         getServer(INTRO).then((res)=>{
             this.setState({intro : res.data})
         }).catch((err)=>{
@@ -43,7 +44,7 @@ export default class Body extends React.PureComponent
             ret.map((v,i)=>{
                 v.imgsrc = JSON.parse(v.imgsrc)
             })
-            this.setState({projects : ret})
+            this.setState({isLoaded : true,projects : ret})
         }).catch((err)=>{
             console.log("ERROR : "+err)
         })
@@ -54,7 +55,7 @@ export default class Body extends React.PureComponent
             <div className="home">
                 <Title intro={this.state.intro}/>
                 <Links />
-                <Projets projects={this.state.projects}/>
+                <Projets isLoaded = {this.state.isLoaded} projects={this.state.projects}/>
             </div>
         )
     }
