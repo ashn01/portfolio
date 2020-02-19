@@ -10,10 +10,11 @@ export default class Title extends React.PureComponent
         return(
             <div className="titleContainer">
                 <div className="title">
-                    {this.props.intro.title}
+                    Hello Visitor ! Development is in progress !
                 </div>
                 <div className="description">
-                    {this.props.intro.descriptions}
+                    Most of features are already developed. Sorry for inconvenience and Thank you for visiting my portfolio web page. you can trace development progress on my github page.
+                    <br/><a href='https://github.com/ashn01' target="_blank" rel="noopener noreferrer">github</a>
                 </div>
             </div>
         )

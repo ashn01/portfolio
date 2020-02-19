@@ -14,11 +14,6 @@ export default class Body extends React.PureComponent
     {
         super(props)
         this.state = {
-            intro : {
-                id: 0,
-                title : "",
-                descriptions : ""
-            },
             projects : [],
             isLoaded : false
         }
@@ -26,13 +21,6 @@ export default class Body extends React.PureComponent
     componentDidMount()
     {
         window.scrollTo(0, 0) // reset scroll to Top
-        getServer(INTRO).then((res)=>{
-            this.setState({intro : res.data})
-        }).catch((err)=>{
-            console.log("ERROR : "+err)
-            this.setState({intro:{id:0, title:"Sorry", descriptions:"Web page is experiencing difficulty accessing server"}})
-        })
-
         getServer(PROJECTS).then((res)=>{
             console.log(res)
 
@@ -45,7 +33,7 @@ export default class Body extends React.PureComponent
     {
         return (
             <div className="home">
-                <Title intro={this.state.intro}/>
+                <Title/>
                 <Links />
                 <Projets isLoaded = {this.state.isLoaded} projects={this.state.projects}/>
             </div>
