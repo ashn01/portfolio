@@ -1,8 +1,8 @@
 import React from 'react'
 
-import '../../../css/Home.css'
+import '../../../css/Project.css'
 
-export default class Title extends React.PureComponent
+export default class ProjectTitle extends React.PureComponent
 {
     
     render()
@@ -10,10 +10,10 @@ export default class Title extends React.PureComponent
         return(
             <div className="titleContainer">
                 <div className="title">
-                    {this.props.project.name}
+                    {this.props.project.projectTitle}
                 </div>
                 <div className="description">
-                    {this.props.project.descriptions}
+                    {this.props.project.projectDescription}
                 </div>
             </div>
         )

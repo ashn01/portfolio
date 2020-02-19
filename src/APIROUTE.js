@@ -1,8 +1,8 @@
 import axios from 'axios'
 
 export const INTRO = "https://ymkportfoliofunc.azurewebsites.net/api/GetIntro"
-export const PROJECTS = "https://ymkportfoliofunc.azurewebsites.net/api/GetProjects"
-export const PROJECTDETAIL = "https://ymkportfoliofunc.azurewebsites.net/api/projectDetail"
+export const PROJECTS = "https://ymkportfoliofunctions.azurewebsites.net/api/GetProjects"
+export const PROJECTDETAIL = "https://ymkportfoliofunctions.azurewebsites.net/api/GetProjectById"
 
 export async function getServer(route) {
     return await axios.get(route)

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Title from './ProjectContents/Title'
+import ProjectTitle from './ProjectContents/ProjectTitle'
 import Carousel from './ProjectContents/Carousel'
 import ProjectDetail from './ProjectContents/ProjectDetail'
 
@@ -33,14 +33,7 @@ export default class Project extends React.PureComponent
     {
         window.scrollTo(0, 0) // reset scroll to Top
         getServerWithParams(PROJECTDETAIL,this.props.params).then((res)=>{
-            var ret
-            res.data.map((v,i)=>{
-                for(var key in v)
-                {
-                    ret = JSON.parse(v[key])
-                }
-            })
-            this.setState({isLoaded:true, project:ret[0]})
+            this.setState({isLoaded:true, project:res.data[0]})
         })
 
     }
@@ -51,7 +44,7 @@ export default class Project extends React.PureComponent
                 {
                     this.state.isLoaded &&
                     <div>
-                        <Title project={this.state.project}/>
+                        <ProjectTitle project={this.state.project}/>
                         <Carousel project={this.state.project}/>
                         <ProjectDetail project={this.state.project}/>
                     </div>

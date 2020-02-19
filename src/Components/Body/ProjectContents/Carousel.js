@@ -18,7 +18,8 @@ export default class Carousel extends React.PureComponent
                             {
                                 this.props.project.imgsrc.map((v,i)=>{
                                     return (
-                                        <img key={i} alt={i} src={process.env.PUBLIC_URL + "/images/" +v}/>
+                                        <img key={i} alt={i} src={process.env.PUBLIC_URL + "/images/" +v} 
+                                        onError={(e)=>{e.target.onerror = null; e.target.src=process.env.PUBLIC_URL + "/empty.png"}}/>
                                     )
                                 })
                             }

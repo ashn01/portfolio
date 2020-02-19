@@ -1,0 +1,515 @@
+.about
+{
+    margin: 80px 10px;
+}
+
+hr{
+    width: 90%;
+    background-color: #D7E0DE;
+    opacity: 0.4;
+}
+
+@media only screen and (max-width: 599px) {
+    .about .titleContainer
+    {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .about .title
+    {
+        font-size: 36px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .about .description
+    {
+        font-size: 24px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .about .aboutDetail
+    {
+        padding: 20px 0px;
+        width: 100%;
+        margin: 0 auto;
+        overflow: auto;
+    }
+
+    .about .aboutDetailLeft
+    {
+        width: 100%;
+        position: relative;
+        float: left;
+    }
+
+    .about .aboutDetailLeft>div
+    {
+        margin: 20px 30px;
+    }
+
+    .about .aboutDetailLeft img
+    {
+        width: 100%;
+    }
+
+    .about .aboutDetailLeft .aboutBtn
+    {
+        background-color: #5E92FF;
+        border-radius: 5px;
+        width: 200px;
+        height: 50px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+
+    .about .aboutDetailLeft .aboutBtn p
+    {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFFFFF;
+        font-weight: bold;
+        font-family: 'Darker Grotesque', sans-serif;
+        font-size: 20px;
+    }
+
+    .about .aboutDetailRight
+    {
+        width: 100%;
+        position: relative;
+        float: left;
+    }
+
+    .about .aboutDetailRight>div
+    {
+        margin: 0px 30px;
+    }
+
+    .about .aboutDetailRight .title
+    {
+        font-size: 30px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .about .aboutDetailRight .description
+    {
+        font-size: 20px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .aboutDetailRight .aboutInfo>div
+    {
+        padding: 12px;
+    }
+    .aboutDetailRight .aboutInfo .aboutSummaryTitles
+    {
+        font-size: 24px;
+        font-weight: bold;
+        font-family: 'Darker Grotesque', sans-serif;
+        padding-bottom: 5px;
+    }
+
+    .aboutDetailRight .aboutInfo .aboutSummaryDescription
+    {
+        font-size: 18px;
+        word-wrap: break-word;
+        font-family: 'Darker Grotesque', sans-serif;
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (min-width: 600px) and (max-width: 999px) {
+    .about .titleContainer
+    {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .about .title
+    {
+        font-size: 58px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .about .description
+    {
+        font-size: 26px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .about .aboutDetail
+    {
+        padding: 20px 0px;
+        width: 90%;
+        margin: 0 auto;
+        overflow: auto;
+    }
+
+    .about .aboutDetailLeft
+    {
+        width: 100%;
+        position: relative;
+        float: left;
+    }
+
+    .about .aboutDetailLeft>div
+    {
+        margin: 20px 50px;
+    }
+
+    .about .aboutDetailLeft img
+    {
+        width: 100%;
+    }
+
+    .about .aboutDetailLeft .aboutBtn
+    {
+        background-color: #5E92FF;
+        border-radius: 5px;
+        width: 200px;
+        height: 50px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+
+    .about .aboutDetailLeft .aboutBtn p
+    {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFFFFF;
+        font-weight: bold;
+        font-family: 'Darker Grotesque', sans-serif;
+        font-size: 20px;
+    }
+
+    .about .aboutDetailRight
+    {
+        width: 100%;
+        position: relative;
+        float: left;
+    }
+
+    .about .aboutDetailRight>div
+    {
+        margin: 0px 50px;
+    }
+
+    .about .aboutDetailRight .title
+    {
+        font-size: 50px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .about .aboutDetailRight .description
+    {
+        font-size: 24px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .aboutDetailRight .aboutInfo>div
+    {
+        padding: 20px;
+    }
+    .aboutDetailRight .aboutInfo .aboutSummaryTitles
+    {
+        font-size: 26px;
+        font-weight: bold;
+        font-family: 'Darker Grotesque', sans-serif;
+        padding-bottom: 10px;
+    }
+
+    .aboutDetailRight .aboutInfo .aboutSummaryDescription
+    {
+        font-size: 20px;
+        font-family: 'Darker Grotesque', sans-serif;
+        word-wrap: break-word;
+    }
+}
+  
+/* Tablet Styles */
+@media only screen and (min-width: 1000px) and (max-width: 1599px) {
+    .about .titleContainer
+    {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .about .title
+    {
+        font-size: 52px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .about .description
+    {
+        font-size: 24px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .about .aboutDetail
+    {
+        padding: 100px 0px;
+        width: 90%;
+        margin: 0 auto;
+        overflow: auto;
+    }
+
+    .about .aboutDetailLeft
+    {
+        width: 45%;
+        position: relative;
+        float: left;
+    }
+
+    .about .aboutDetailLeft>div
+    {
+        margin: 20px 50px;
+    }
+
+    .about .aboutDetailLeft img
+    {
+        width: 100%;
+    }
+
+    .about .aboutDetailLeft .aboutBtn
+    {
+        background-color: #5E92FF;
+        border-radius: 5px;
+        width: 200px;
+        height: 50px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .about .aboutDetailLeft .aboutBtn p
+    {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFFFFF;
+        font-weight: bold;
+        font-family: 'Darker Grotesque', sans-serif;
+        font-size: 18px;
+    }
+
+    .about .aboutDetailRight
+    {
+        width: 55%;
+        position: relative;
+        float: left;
+    }
+
+    .about .aboutDetailRight>div
+    {
+        margin: 0px 50px;
+    }
+
+    .about .aboutDetailRight .title
+    {
+        font-size: 48px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .about .aboutDetailRight .description
+    {
+        font-size: 20px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .aboutDetailRight .aboutInfo>div
+    {
+        padding: 20px;
+    }
+    .aboutDetailRight .aboutInfo .aboutSummaryTitles
+    {
+        font-size: 24px;
+        font-weight: bold;
+        font-family: 'Darker Grotesque', sans-serif;
+        padding-bottom: 10px;
+    }
+
+    .aboutDetailRight .aboutInfo .aboutSummaryDescription
+    {
+        font-size: 18px;
+        word-wrap: break-word;
+        font-family: 'Darker Grotesque', sans-serif;
+    }
+}
+  
+/* Desktop Styles */
+@media only screen and (min-width: 1600px) {
+    .about .titleContainer
+    {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .about .title
+    {
+        font-size: 58px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .about .description
+    {
+        font-size: 26px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .about .aboutDetail
+    {
+        padding: 100px 0px;
+        width: 90%;
+        margin: 0 auto;
+        overflow: auto;
+    }
+
+    .about .aboutDetailLeft
+    {
+        width: 45%;
+        position: relative;
+        float: left;
+    }
+
+    .about .aboutDetailLeft>div
+    {
+        margin: 20px 50px;
+    }
+
+    .about .aboutDetailLeft img
+    {
+        width: 100%;
+    }
+
+    .about .aboutDetailLeft .aboutBtn
+    {
+        background-color: #5E92FF;
+        border-radius: 5px;
+        width: 200px;
+        height: 50px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .about .aboutDetailLeft .aboutBtn p
+    {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFFFFF;
+        font-weight: bold;
+        font-family: 'Darker Grotesque', sans-serif;
+        font-size: 20px;
+    }
+
+    .about .aboutDetailRight
+    {
+        width: 55%;
+        position: relative;
+        float: left;
+    }
+
+    .about .aboutDetailRight>div
+    {
+        margin: 0px 50px;
+    }
+
+    .about .aboutDetailRight .title
+    {
+        font-size: 50px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .about .aboutDetailRight .description
+    {
+        font-size: 24px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#3a484f;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .aboutDetailRight .aboutInfo>div
+    {
+        padding: 20px;
+    }
+    .aboutDetailRight .aboutInfo .aboutSummaryTitles
+    {
+        font-size: 24px;
+        font-weight: bold;
+        font-family: 'Darker Grotesque', sans-serif;
+        padding-bottom: 10px;
+    }
+
+    .aboutDetailRight .aboutInfo .aboutSummaryDescription
+    {
+        font-size: 18px;
+        font-family: 'Darker Grotesque', sans-serif;
+        word-wrap: break-word;
+    }
+}

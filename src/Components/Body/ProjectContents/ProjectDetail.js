@@ -8,12 +8,12 @@ export default class ProjectDetail extends React.PureComponent
         return (
             <div className="projectDetail">
                 <div className="projectImage">
-                    <img src="https://i.stack.imgur.com/GA6bB.png" alt="project"/>
+                    <img src={process.env.PUBLIC_URL + "/images/" +this.props.project.imgsrc[0]} alt="project" onError={(e)=>{e.target.onerror = null; e.target.src=process.env.PUBLIC_URL + "/empty.png"}}/>
                 </div>
                 <div className="projectSummary">
                     <div>
                         <div>
-                            <div className="projectBar"/>
+                            <div className="bar"/>
                             <div className="projectSummaryTitles">
                                 Project Type
                             </div>
@@ -24,7 +24,7 @@ export default class ProjectDetail extends React.PureComponent
                             </div>
                         </div>
                         <div>
-                            <div className="projectBar"/>
+                            <div className="bar"/>
                             <div className="projectSummaryTitles">
                                 My Role
                             </div>
@@ -35,7 +35,7 @@ export default class ProjectDetail extends React.PureComponent
                             </div>
                         </div>
                         <div>
-                            <div className="projectBar"/>
+                            <div className="bar"/>
                             <div className="projectSummaryTitles">
                                 Period
                             </div>
@@ -44,7 +44,7 @@ export default class ProjectDetail extends React.PureComponent
                             </div>
                         </div>
                         <div>
-                            <div className="projectBar"/>
+                            <div className="bar"/>
                             <div className="projectSummaryTitles">
                                 Team
                             </div>
