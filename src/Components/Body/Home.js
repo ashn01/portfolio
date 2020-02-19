@@ -34,17 +34,9 @@ export default class Body extends React.PureComponent
         })
 
         getServer(PROJECTS).then((res)=>{
-            var ret
-            res.data.map((v,i)=>{
-                for(var key in v)
-                {
-                    ret = JSON.parse(v[key])
-                }
-            })
-            ret.map((v,i)=>{
-                v.imgsrc = JSON.parse(v.imgsrc)
-            })
-            this.setState({isLoaded : true,projects : ret})
+            console.log(res)
+
+            this.setState({isLoaded : true, projects : res.data})
         }).catch((err)=>{
             console.log("ERROR : "+err)
         })
