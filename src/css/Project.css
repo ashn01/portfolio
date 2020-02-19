@@ -1,7 +1,7 @@
 
 
 
-.projectBar
+.bar
 {
     width: 20px;
     height: 2px;
@@ -46,7 +46,7 @@
     .project .titleContainer .description
     {
         font-size: 24px;
-        font-family: 'Thasadith', sans-serif;
+        font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         padding-bottom: 50px;
     }
@@ -136,7 +136,7 @@
     .project .titleContainer .description
     {
         font-size: 20px;
-        font-family: 'Thasadith', sans-serif;
+        font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         padding-bottom: 50px;
     }
@@ -231,7 +231,7 @@
     .project .titleContainer .description
     {
         font-size: 20px;
-        font-family: 'Thasadith', sans-serif;
+        font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         padding-bottom: 50px;
     }
@@ -327,7 +327,7 @@
     .project .titleContainer .description
     {
         font-size: 24px;
-        font-family: 'Thasadith', sans-serif;
+        font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         padding-bottom: 50px;
     }

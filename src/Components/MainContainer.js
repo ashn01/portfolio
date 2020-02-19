@@ -10,11 +10,6 @@ import '../css/Main.css'
 
 export default class MainContainer extends React.PureComponent
 {
-    constructor(props)
-    {
-        super(props)
-        console.log(this.props)
-    }
     renderWhat()
     {
         switch(this.props.contents)
@@ -33,7 +28,7 @@ export default class MainContainer extends React.PureComponent
                 <Header/>
                 <div className="main">
                     {
-                       contents
+                        contents
                     }
                 </div>
                 <Footer/>

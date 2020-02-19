@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Title from './ProjectContents/Title'
+import ProjectTitle from './ProjectContents/ProjectTitle'
 import Carousel from './ProjectContents/Carousel'
 import ProjectDetail from './ProjectContents/ProjectDetail'
 
@@ -44,7 +44,7 @@ export default class Project extends React.PureComponent
                 {
                     this.state.isLoaded &&
                     <div>
-                        <Title project={this.state.project}/>
+                        <ProjectTitle project={this.state.project}/>
                         <Carousel project={this.state.project}/>
                         <ProjectDetail project={this.state.project}/>
                     </div>

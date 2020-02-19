@@ -3,7 +3,7 @@ import React from 'react'
 
 import '../../../css/Home.css'
 
-export default class Title extends React.PureComponent
+export default class HomeTitle extends React.PureComponent
 {
     render()
     {
@@ -14,7 +14,7 @@ export default class Title extends React.PureComponent
                 </div>
                 <div className="description">
                     Most of features are already developed. Sorry for inconvenience and Thank you for visiting my portfolio web page. you can trace development progress on my github page.
-                    <br/><a href='https://github.com/ashn01' target="_blank" rel="noopener noreferrer">github</a>
+                    <br/><a href='https://github.com/ashn01/portfolio' target="_blank" rel="noopener noreferrer">github</a>
                 </div>
             </div>
         )

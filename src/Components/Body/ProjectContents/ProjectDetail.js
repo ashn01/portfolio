@@ -13,7 +13,7 @@ export default class ProjectDetail extends React.PureComponent
                 <div className="projectSummary">
                     <div>
                         <div>
-                            <div className="projectBar"/>
+                            <div className="bar"/>
                             <div className="projectSummaryTitles">
                                 Project Type
                             </div>
@@ -24,7 +24,7 @@ export default class ProjectDetail extends React.PureComponent
                             </div>
                         </div>
                         <div>
-                            <div className="projectBar"/>
+                            <div className="bar"/>
                             <div className="projectSummaryTitles">
                                 My Role
                             </div>
@@ -35,7 +35,7 @@ export default class ProjectDetail extends React.PureComponent
                             </div>
                         </div>
                         <div>
-                            <div className="projectBar"/>
+                            <div className="bar"/>
                             <div className="projectSummaryTitles">
                                 Period
                             </div>
@@ -44,7 +44,7 @@ export default class ProjectDetail extends React.PureComponent
                             </div>
                         </div>
                         <div>
-                            <div className="projectBar"/>
+                            <div className="bar"/>
                             <div className="projectSummaryTitles">
                                 Team
                             </div>

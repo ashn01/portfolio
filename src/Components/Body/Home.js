@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Title from './HomeContents/Title'
+import HomeTitle from './HomeContents/HomeTitle'
 import Links from './HomeContents/Links'
 import Projets from './HomeContents/Projects'
 
-import { getServer, INTRO, PROJECTS } from '../../APIROUTE'
+import { getServer, PROJECTS } from '../../APIROUTE'
 
 import '../../css/Home.css'
 
@@ -22,8 +22,6 @@ export default class Body extends React.PureComponent
     {
         window.scrollTo(0, 0) // reset scroll to Top
         getServer(PROJECTS).then((res)=>{
-            console.log(res)
-
             this.setState({isLoaded : true, projects : res.data})
         }).catch((err)=>{
             console.log("ERROR : "+err)
@@ -33,7 +31,7 @@ export default class Body extends React.PureComponent
     {
         return (
             <div className="home">
-                <Title/>
+                <HomeTitle/>
                 <Links />
                 <Projets isLoaded = {this.state.isLoaded} projects={this.state.projects}/>
             </div>
