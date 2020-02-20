@@ -43,6 +43,14 @@
         font-weight: bold;
         padding-bottom: 50px;
     }
+    .project .titleContainer .subTitle
+    {
+        font-size: 20px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#bdc4c8;
+        font-weight: bold;
+        padding-bottom: 50px;
+    }
     .project .titleContainer .description
     {
         font-size: 24px;
@@ -103,12 +111,14 @@
     {
         font-size: 24px;
         font-weight: bold;
+        font-family: 'Darker Grotesque', sans-serif;
         padding-bottom: 10px;
     }
 
     .projectDetail>.projectSummary .projectSummaryDescription
     {
         font-size: 20px;
+        font-family: 'Darker Grotesque', sans-serif;
         word-wrap: break-word;
     }
 }
@@ -127,15 +137,23 @@
 
     .project .titleContainer .title
     {
-        font-size: 40px;
+        font-size: 44px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
+        font-weight: bold;
+        padding-bottom: 40px;
+    }
+    .project .titleContainer .subTitle
+    {
+        font-size: 22px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#bdc4c8;
         font-weight: bold;
         padding-bottom: 50px;
     }
     .project .titleContainer .description
     {
-        font-size: 20px;
+        font-size: 22px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         padding-bottom: 50px;
@@ -184,7 +202,7 @@
     .projectDetail>.projectSummary>div
     {
         margin: 0;
-        padding-left:80px;
+        padding-left:60px;
         position: relative;
         top: 50%;
         -ms-transform: translateY(-50%);
@@ -196,14 +214,16 @@
     }
     .projectDetail>.projectSummary .projectSummaryTitles
     {
-        font-size: 20px;
+        font-size: 24px;
         font-weight: bold;
+        font-family: 'Darker Grotesque', sans-serif;
         padding-bottom: 10px;
     }
 
     .projectDetail>.projectSummary .projectSummaryDescription
     {
-        font-size: 14px;
+        font-size: 20px;
+        font-family: 'Darker Grotesque', sans-serif;
         word-wrap: break-word;
     }
 }
@@ -222,15 +242,23 @@
 
     .project .titleContainer .title
     {
-        font-size: 40px;
+        font-size: 48px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         font-weight: bold;
         padding-bottom: 50px;
     }
+    .project .titleContainer .subTitle
+    {
+        font-size: 26px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#bdc4c8;
+        font-weight: bold;
+        padding-bottom: 50px;
+    }
     .project .titleContainer .description
     {
-        font-size: 20px;
+        font-size: 26px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         padding-bottom: 50px;
@@ -293,12 +321,14 @@
     {
         font-size: 24px;
         font-weight: bold;
+        font-family: 'Darker Grotesque', sans-serif;
         padding-bottom: 10px;
     }
 
     .projectDetail>.projectSummary .projectSummaryDescription
     {
         font-size: 18px;
+        font-family: 'Darker Grotesque', sans-serif;
         word-wrap: break-word;
     }
 }
@@ -318,12 +348,22 @@
 
     .project .titleContainer .title
     {
-        font-size: 48px;
+        font-size: 56px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         font-weight: bold;
         padding-bottom: 50px;
     }
+
+    .project .titleContainer .subTitle
+    {
+        font-size: 24px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#bdc4c8;
+        font-weight: bold;
+        padding-bottom: 50px;
+    }
+
     .project .titleContainer .description
     {
         font-size: 24px;
@@ -344,6 +384,7 @@
         width: 90%;
         margin: 0 auto;
         display: flex;
+        padding-bottom: 100px;
     }
 
     .project .projectDetail .projectImage
@@ -362,6 +403,19 @@
         max-width: 100%;
         height: auto;
         top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .project .projectDetail .projectImage .projectLanguage
+    {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        top: 30%;
         transform: translateY(-50%);
     }
 
@@ -389,12 +443,14 @@
     {
         font-size: 24px;
         font-weight: bold;
+        font-family: 'Darker Grotesque', sans-serif;
         padding-bottom: 10px;
     }
 
     .projectDetail>.projectSummary .projectSummaryDescription
     {
         font-size: 18px;
+        font-family: 'Darker Grotesque', sans-serif;
         word-wrap: break-word;
     }
 }
