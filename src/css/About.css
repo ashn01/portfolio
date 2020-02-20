@@ -8,6 +8,17 @@ hr{
     background-color: #D7E0DE;
     opacity: 0.4;
 }
+.about .aboutDetailLeft .aboutBtn:hover 
+{
+    background-color: rgb(49, 99, 207);
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 599px) {
     .about .titleContainer
@@ -18,7 +29,7 @@ hr{
 
     .about .title
     {
-        font-size: 36px;
+        font-size: 38px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         font-weight: bold;
@@ -109,29 +120,53 @@ hr{
 
     .about .aboutDetailRight .description
     {
-        font-size: 20px;
+        font-size: 22px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         text-align: center;
         padding-bottom: 40px;
     }
-    .aboutDetailRight .aboutInfo>div
+    .aboutAdditionalInfo
     {
-        padding: 12px;
+        width: 90%;
+        margin: 0 auto;
     }
-    .aboutDetailRight .aboutInfo .aboutSummaryTitles
+    .aboutAdditionalInfo .aboutInfoGrid
     {
-        font-size: 24px;
-        font-weight: bold;
-        font-family: 'Darker Grotesque', sans-serif;
-        padding-bottom: 5px;
+        margin: 0;
+        position: relative;
+        
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-columns: max-content;
+        grid-auto-rows: min-content;
+        grid-auto-flow: dense;
+        grid-gap: 30px;
     }
 
-    .aboutDetailRight .aboutInfo .aboutSummaryDescription
+    .aboutAdditionalInfo .aboutInfoGrid .aboutInfoGridCell
     {
-        font-size: 18px;
-        word-wrap: break-word;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        grid-column-end: span 1;
+        grid-row-end: span 1;
+        border-radius: 10px;
+    }
+
+    .aboutAdditionalInfo .aboutSummaryTitles
+    {
+        font-size: 30px;
+        font-weight: bold;
         font-family: 'Darker Grotesque', sans-serif;
+        padding-bottom: 10px;
+    }
+
+    .aboutAdditionalInfo .aboutSummaryDescription
+    {
+        font-size: 22px;
+        font-family: 'Darker Grotesque', sans-serif;
+        word-wrap: break-word;
     }
 }
 
@@ -145,7 +180,7 @@ hr{
 
     .about .title
     {
-        font-size: 58px;
+        font-size: 48px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         font-weight: bold;
@@ -155,7 +190,7 @@ hr{
 
     .about .description
     {
-        font-size: 26px;
+        font-size: 28px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         text-align: center;
@@ -181,7 +216,7 @@ hr{
     {
         margin: 20px 50px;
     }
-
+    
     .about .aboutDetailLeft img
     {
         width: 100%;
@@ -226,7 +261,7 @@ hr{
 
     .about .aboutDetailRight .title
     {
-        font-size: 50px;
+        font-size: 48px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         font-weight: bold;
@@ -242,21 +277,45 @@ hr{
         text-align: center;
         padding-bottom: 40px;
     }
-    .aboutDetailRight .aboutInfo>div
+    .aboutAdditionalInfo
     {
-        padding: 20px;
+        width: 90%;
+        margin: 0 auto;
     }
-    .aboutDetailRight .aboutInfo .aboutSummaryTitles
+    .aboutAdditionalInfo .aboutInfoGrid
     {
-        font-size: 26px;
+        margin: 0;
+        position: relative;
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-columns: max-content;
+        grid-auto-rows: min-content;
+        grid-auto-flow: dense;
+        grid-gap: 30px;
+    }
+
+    .aboutAdditionalInfo .aboutInfoGrid .aboutInfoGridCell
+    {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        grid-column-end: span 1;
+        grid-row-end: span 1;
+        border-radius: 10px;
+    }
+
+    .aboutAdditionalInfo .aboutSummaryTitles
+    {
+        font-size: 32px;
         font-weight: bold;
         font-family: 'Darker Grotesque', sans-serif;
         padding-bottom: 10px;
     }
 
-    .aboutDetailRight .aboutInfo .aboutSummaryDescription
+    .aboutAdditionalInfo .aboutSummaryDescription
     {
-        font-size: 20px;
+        font-size: 24px;
         font-family: 'Darker Grotesque', sans-serif;
         word-wrap: break-word;
     }
@@ -272,7 +331,7 @@ hr{
 
     .about .title
     {
-        font-size: 52px;
+        font-size: 56px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         font-weight: bold;
@@ -282,7 +341,7 @@ hr{
 
     .about .description
     {
-        font-size: 24px;
+        font-size: 26px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         text-align: center;
@@ -362,29 +421,54 @@ hr{
 
     .about .aboutDetailRight .description
     {
-        font-size: 20px;
+        font-size: 26px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         text-align: center;
         padding-bottom: 40px;
     }
-    .aboutDetailRight .aboutInfo>div
+
+    .aboutAdditionalInfo
     {
-        padding: 20px;
+        width: 90%;
+        margin: 0 auto;
     }
-    .aboutDetailRight .aboutInfo .aboutSummaryTitles
+    .aboutAdditionalInfo .aboutInfoGrid
     {
-        font-size: 24px;
+        margin: 0;
+        position: relative;
+        
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-columns: max-content;
+        grid-auto-rows: min-content;
+        grid-auto-flow: dense;
+        grid-gap: 30px;
+    }
+
+    .aboutAdditionalInfo .aboutInfoGrid .aboutInfoGridCell
+    {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        grid-column-end: span 1;
+        grid-row-end: span 1;
+        border-radius: 10px;
+    }
+
+    .aboutAdditionalInfo .aboutSummaryTitles
+    {
+        font-size: 32px;
         font-weight: bold;
         font-family: 'Darker Grotesque', sans-serif;
         padding-bottom: 10px;
     }
 
-    .aboutDetailRight .aboutInfo .aboutSummaryDescription
+    .aboutAdditionalInfo .aboutSummaryDescription
     {
-        font-size: 18px;
-        word-wrap: break-word;
+        font-size: 24px;
         font-family: 'Darker Grotesque', sans-serif;
+        word-wrap: break-word;
     }
 }
   
@@ -398,7 +482,7 @@ hr{
 
     .about .title
     {
-        font-size: 58px;
+        font-size: 62px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         font-weight: bold;
@@ -408,7 +492,7 @@ hr{
 
     .about .description
     {
-        font-size: 26px;
+        font-size: 28px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         text-align: center;
@@ -494,21 +578,45 @@ hr{
         text-align: center;
         padding-bottom: 40px;
     }
-    .aboutDetailRight .aboutInfo>div
+    .aboutAdditionalInfo
     {
-        padding: 20px;
+        width: 90%;
+        margin: 0 auto;
     }
-    .aboutDetailRight .aboutInfo .aboutSummaryTitles
+    .aboutAdditionalInfo .aboutInfoGrid
     {
-        font-size: 24px;
+        margin: 0;
+        position: relative;
+        
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-columns: max-content;
+        grid-auto-rows: min-content;
+        grid-auto-flow: dense;
+        grid-gap: 30px;
+    }
+
+    .aboutAdditionalInfo .aboutInfoGrid .aboutInfoGridCell
+    {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        grid-column-end: span 1;
+        grid-row-end: span 1;
+        border-radius: 10px;
+    }
+
+    .aboutAdditionalInfo .aboutSummaryTitles
+    {
+        font-size: 32px;
         font-weight: bold;
         font-family: 'Darker Grotesque', sans-serif;
         padding-bottom: 10px;
     }
 
-    .aboutDetailRight .aboutInfo .aboutSummaryDescription
+    .aboutAdditionalInfo .aboutSummaryDescription
     {
-        font-size: 18px;
+        font-size: 24px;
         font-family: 'Darker Grotesque', sans-serif;
         word-wrap: break-word;
     }

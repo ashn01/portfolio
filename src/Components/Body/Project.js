@@ -47,6 +47,7 @@ export default class Project extends React.PureComponent
                         <ProjectTitle project={this.state.project}/>
                         <Carousel project={this.state.project}/>
                         <ProjectDetail project={this.state.project}/>
+                        <hr/>
                     </div>
                 }
             </div>

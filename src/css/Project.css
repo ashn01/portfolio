@@ -37,11 +37,18 @@
 
     .project .titleContainer .title
     {
-        font-size: 36px;
+        font-size: 46px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         font-weight: bold;
         padding-bottom: 50px;
+    }
+    .project .titleContainer .subTitle
+    {
+        font-size: 22px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#bdc4c8;
+        font-weight: bold;
     }
     .project .titleContainer .description
     {
@@ -49,13 +56,14 @@
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         padding-bottom: 50px;
+        line-height: 28px;
     }
 
     .project .carouselContainer
     {
         width: 90%;
         margin: 0 auto;
-        padding-bottom: 100px;
+        padding-bottom: 80px;
     }
 
     .project .projectDetail
@@ -65,50 +73,53 @@
         position: relative;
         overflow: auto;
     }
-
-    .project .projectDetail .projectImage
+    .project .projectDetail .projectLanguage
     {
         width: 100%;
         position: relative;
-        float: left;
         padding-bottom: 50px;
-    }
-
-    .project .projectDetail .projectImage img
-    {
-        position: relative;
-        width: 90%;
-        margin: 0 auto;
-        display: block;
     }
 
     .project .projectDetail .projectSummary
     {
         width: 100%;
         position: relative;
-        float: left;
     }
 
-    .projectDetail>.projectSummary>div
+    .projectDetail .projectSummary .projectSummaryGrid 
     {
-        margin: 0 auto;
-        padding: 0 10px;
+        margin: 0;
         position: relative;
+        
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-columns: max-content;
+        grid-auto-rows: min-content;
+        grid-auto-flow: dense;
+        grid-gap: 30px;
+        padding-bottom: 40px;
     }
-    .projectDetail>.projectSummary>div>div
+    .projectDetail .projectSummary .projectSummaryGrid .projectSummaryCell
     {
-        padding: 15px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        grid-column-end: span 1;
+        grid-row-end: span 1;
+        border-radius: 10px;
     }
     .projectDetail>.projectSummary .projectSummaryTitles
     {
-        font-size: 24px;
+        font-size: 32px;
         font-weight: bold;
+        font-family: 'Darker Grotesque', sans-serif;
         padding-bottom: 10px;
     }
 
     .projectDetail>.projectSummary .projectSummaryDescription
     {
-        font-size: 20px;
+        font-size: 26px;
+        font-family: 'Darker Grotesque', sans-serif;
         word-wrap: break-word;
     }
 }
@@ -127,83 +138,88 @@
 
     .project .titleContainer .title
     {
-        font-size: 40px;
+        font-size: 52px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         font-weight: bold;
         padding-bottom: 50px;
     }
+    .project .titleContainer .subTitle
+    {
+        font-size: 24px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#bdc4c8;
+        font-weight: bold;
+    }
     .project .titleContainer .description
     {
-        font-size: 20px;
+        font-size: 26px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         padding-bottom: 50px;
+        line-height: 28px;
     }
 
     .project .carouselContainer
     {
         width: 90%;
         margin: 0 auto;
-        padding-bottom: 150px;
+        padding-bottom: 100px;
     }
 
     .project .projectDetail
     {
         width: 90%;
         margin: 0 auto;
-        display: flex;
     }
 
-    .project .projectDetail .projectImage
+    .project .projectDetail .projectLanguage
     {
-        width: 50%;
+        width: 100%;
         position: relative;
-        float: left;
-    }
-
-    .project .projectDetail .projectImage img
-    {
-        position: relative;
-        width: 90%;
-        margin: 0 auto;
-        display: block;
-        max-width: 100%;
-        height: auto;
-        top: 50%;
-        transform: translateY(-50%);
+        padding-bottom: 50px;
     }
 
     .project .projectDetail .projectSummary
     {
-        width: 50%;
+        width: 100%;
         position: relative;
-        float: left;
     }
 
-    .projectDetail>.projectSummary>div
+    .projectDetail .projectSummary .projectSummaryGrid 
     {
         margin: 0;
-        padding-left:80px;
         position: relative;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-columns: max-content;
+        grid-auto-rows: min-content;
+        grid-auto-flow: dense;
+        grid-gap: 30px;
+        padding-bottom: 40px;
     }
-    .projectDetail>.projectSummary>div>div
+    .projectDetail .projectSummary .projectSummaryGrid .projectSummaryCell
     {
-        padding: 20px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        grid-column-end: span 1;
+        grid-row-end: span 1;
+        border-radius: 10px;
     }
     .projectDetail>.projectSummary .projectSummaryTitles
     {
-        font-size: 20px;
+        font-size: 30px;
         font-weight: bold;
+        font-family: 'Darker Grotesque', sans-serif;
         padding-bottom: 10px;
     }
 
     .projectDetail>.projectSummary .projectSummaryDescription
     {
-        font-size: 14px;
+        font-size: 24px;
+        font-family: 'Darker Grotesque', sans-serif;
         word-wrap: break-word;
     }
 }
@@ -222,83 +238,89 @@
 
     .project .titleContainer .title
     {
-        font-size: 40px;
+        font-size: 64px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         font-weight: bold;
         padding-bottom: 50px;
     }
+    .project .titleContainer .subTitle
+    {
+        font-size: 26px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#bdc4c8;
+        font-weight: bold;
+    }
     .project .titleContainer .description
     {
-        font-size: 20px;
+        font-size: 28px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         padding-bottom: 50px;
+        line-height: 28px;
     }
 
     .project .carouselContainer
     {
         width: 90%;
         margin: 0 auto;
-        padding-bottom: 150px;
+        padding-bottom: 100px;
     }
 
     .project .projectDetail
     {
         width: 90%;
         margin: 0 auto;
-        display: flex;
     }
 
-    .project .projectDetail .projectImage
+    .project .projectDetail .projectLanguage
     {
-        width: 50%;
+        width: 100%;
         position: relative;
-        float: left;
-    }
-
-    .project .projectDetail .projectImage img
-    {
-        position: relative;
-        width: 90%;
-        margin: 0 auto;
-        display: block;
-        max-width: 100%;
-        height: auto;
-        top: 50%;
-        transform: translateY(-50%);
+        padding-bottom: 50px;
     }
 
     .project .projectDetail .projectSummary
     {
-        width: 50%;
+        width: 100%;
         position: relative;
-        float: left;
     }
 
-    .projectDetail>.projectSummary>div
+    .projectDetail .projectSummary .projectSummaryGrid 
     {
         margin: 0;
-        padding: 0 100px;
         position: relative;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-columns: max-content;
+        grid-auto-rows: min-content;
+        grid-auto-flow: dense;
+        grid-gap: 30px;
+        padding-bottom: 50px;
     }
-    .projectDetail>.projectSummary>div>div
+    .projectDetail .projectSummary .projectSummaryGrid .projectSummaryCell
     {
-        padding: 20px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        grid-column-end: span 1;
+        grid-row-end: span 1;
+        border-radius: 10px;
     }
+    
     .projectDetail>.projectSummary .projectSummaryTitles
     {
-        font-size: 24px;
+        font-size: 32px;
         font-weight: bold;
+        font-family: 'Darker Grotesque', sans-serif;
         padding-bottom: 10px;
     }
 
     .projectDetail>.projectSummary .projectSummaryDescription
     {
-        font-size: 18px;
+        font-size: 26px;
+        font-family: 'Darker Grotesque', sans-serif;
         word-wrap: break-word;
     }
 }
@@ -318,15 +340,24 @@
 
     .project .titleContainer .title
     {
-        font-size: 48px;
+        font-size: 72px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         font-weight: bold;
-        padding-bottom: 50px;
+        padding-bottom: 100px;
     }
+
+    .project .titleContainer .subTitle
+    {
+        font-size: 32px;
+        font-family: 'Darker Grotesque', sans-serif;
+        color:#bdc4c8;
+        font-weight: bold;
+    }
+
     .project .titleContainer .description
     {
-        font-size: 24px;
+        font-size: 34px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         padding-bottom: 50px;
@@ -335,7 +366,7 @@
     .project .carouselContainer
     {
         width: 90%;
-        margin: 0px 70px;
+        margin: 0 auto;
         padding-bottom: 100px;
     }
 
@@ -343,58 +374,55 @@
     {
         width: 90%;
         margin: 0 auto;
-        display: flex;
+        padding-bottom: 100px;
     }
 
-    .project .projectDetail .projectImage
+    .project .projectDetail .projectLanguage
     {
-        width: 50%;
+        width: 100%;
         position: relative;
-        float: left;
-    }
-
-    .project .projectDetail .projectImage img
-    {
-        position: relative;
-        width: 90%;
-        margin: 0 auto;
-        display: block;
-        max-width: 100%;
-        height: auto;
-        top: 50%;
-        transform: translateY(-50%);
+        padding-bottom: 50px;
     }
 
     .project .projectDetail .projectSummary
     {
-        width: 50%;
+        width: 100%;
         position: relative;
-        float: left;
     }
 
-    .projectDetail>.projectSummary>div
+    .projectDetail .projectSummary .projectSummaryGrid 
     {
         margin: 0;
-        padding: 0 200px;
         position: relative;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+        
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-columns: max-content;
+        grid-auto-rows: min-content;
+        grid-auto-flow: dense;
+        grid-gap: 30px;
     }
-    .projectDetail>.projectSummary>div>div
+    .projectDetail .projectSummary .projectSummaryGrid .projectSummaryCell
     {
-        padding: 20px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        grid-column-end: span 1;
+        grid-row-end: span 1;
+        border-radius: 10px;
     }
     .projectDetail>.projectSummary .projectSummaryTitles
     {
-        font-size: 24px;
+        font-size: 38px;
         font-weight: bold;
+        font-family: 'Darker Grotesque', sans-serif;
         padding-bottom: 10px;
     }
 
     .projectDetail>.projectSummary .projectSummaryDescription
     {
-        font-size: 18px;
+        font-size: 32px;
+        font-family: 'Darker Grotesque', sans-serif;
         word-wrap: break-word;
     }
 }

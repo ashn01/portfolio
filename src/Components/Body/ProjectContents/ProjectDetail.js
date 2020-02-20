@@ -7,12 +7,16 @@ export default class ProjectDetail extends React.PureComponent
     {
         return (
             <div className="projectDetail">
-                <div className="projectImage">
-                    <img src={process.env.PUBLIC_URL + "/images/" +this.props.project.imgsrc[0]} alt="project" onError={(e)=>{e.target.onerror = null; e.target.src=process.env.PUBLIC_URL + "/empty.png"}}/>
+                <div className = "projectLanguage" > 
+                    {
+                        this.props.project.languages.map((v, i) => {
+                            return v
+                        })
+                    } 
                 </div>
                 <div className="projectSummary">
-                    <div>
-                        <div>
+                    <div className="projectSummaryGrid">
+                        <div className="projectSummaryCell">
                             <div className="bar"/>
                             <div className="projectSummaryTitles">
                                 Project Type
@@ -23,7 +27,7 @@ export default class ProjectDetail extends React.PureComponent
                                 })}
                             </div>
                         </div>
-                        <div>
+                        <div className="projectSummaryCell">
                             <div className="bar"/>
                             <div className="projectSummaryTitles">
                                 My Role
@@ -34,7 +38,7 @@ export default class ProjectDetail extends React.PureComponent
                                 })}
                             </div>
                         </div>
-                        <div>
+                        <div className="projectSummaryCell">
                             <div className="bar"/>
                             <div className="projectSummaryTitles">
                                 Period
@@ -43,7 +47,7 @@ export default class ProjectDetail extends React.PureComponent
                                 {this.props.project.period}
                             </div>
                         </div>
-                        <div>
+                        <div className="projectSummaryCell">
                             <div className="bar"/>
                             <div className="projectSummaryTitles">
                                 Team
