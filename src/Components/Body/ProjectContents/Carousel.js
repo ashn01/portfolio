@@ -10,15 +10,15 @@ export default class Carousel extends React.PureComponent
     render()
     {
         return (
-            <div className="carouselContainer">
+            <div className="container carouselContainer">
                 
-                { this.props.project.imgsrc.length && (
+                { this.props.source.length && (
                     <OwlCarousel className="owl-theme" loop margin={20} items={1} autoplay={true} 
                         autoplayHoverPause={true} animateIn="fadeIn" animateOut="fadeOut" mouseDrag={true} touchDrag={true}>
                             {
-                                this.props.project.imgsrc.map((v,i)=>{
+                                this.props.source.map((v,i)=>{
                                     return (
-                                        <img key={i} alt={i} src={process.env.PUBLIC_URL + "/images/" +v} 
+                                        <img key={i} alt={i} src={process.env.PUBLIC_URL + "/images/" +v.src} 
                                         onError={(e)=>{e.target.onerror = null; e.target.src=process.env.PUBLIC_URL + "/empty.png"}}/>
                                     )
                                 })

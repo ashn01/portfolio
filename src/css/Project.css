@@ -1,13 +1,3 @@
-
-
-
-.bar
-{
-    width: 20px;
-    height: 2px;
-    background-color: #4fcdae;
-}
-
 .owl-theme .owl-dots .owl-dot.active span
 {
     background-color: #4fcdae;
@@ -28,14 +18,19 @@
         margin: 80px 10px;
     }
 
-    .project .titleContainer
+    .project .container
     {
         width: 90%;
         margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+    .project .titleContainer
+    {
         text-align: center;
     }
 
-    .project .titleContainer .title
+    .project .container .title
     {
         font-size: 46px;
         font-family: 'Darker Grotesque', sans-serif;
@@ -43,50 +38,40 @@
         font-weight: bold;
         padding-bottom: 50px;
     }
-    .project .titleContainer .subTitle
+    .project .container .subTitle
     {
         font-size: 22px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#bdc4c8;
         font-weight: bold;
     }
-    .project .titleContainer .description
+    .project .container .description
     {
         font-size: 24px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
-        padding-bottom: 50px;
         line-height: 28px;
-    }
-
-    .project .carouselContainer
-    {
-        width: 90%;
-        margin: 0 auto;
-        padding-bottom: 80px;
     }
 
     .project .projectDetail
     {
-        width: 90%;
-        margin: 0 auto;
-        position: relative;
         overflow: auto;
     }
-    .project .projectDetail .projectLanguage
+
+    .project .container .projectLanguage
     {
         width: 100%;
         position: relative;
         padding-bottom: 50px;
     }
 
-    .project .projectDetail .projectSummary
+    .project .container .projectSummary
     {
         width: 100%;
         position: relative;
     }
 
-    .projectDetail .projectSummary .projectSummaryGrid 
+    .container .projectSummary .projectSummaryGrid 
     {
         margin: 0;
         position: relative;
@@ -97,18 +82,16 @@
         grid-auto-rows: min-content;
         grid-auto-flow: dense;
         grid-gap: 30px;
-        padding-bottom: 40px;
     }
-    .projectDetail .projectSummary .projectSummaryGrid .projectSummaryCell
+    .container .projectSummary .projectSummaryGrid .projectSummaryCell
     {
         width: 100%;
         height: 100%;
         position: relative;
         grid-column-end: span 1;
         grid-row-end: span 1;
-        border-radius: 10px;
     }
-    .projectDetail>.projectSummary .projectSummaryTitles
+    .container>.projectSummary .projectSummaryTitles
     {
         font-size: 32px;
         font-weight: bold;
@@ -116,11 +99,34 @@
         padding-bottom: 10px;
     }
 
-    .projectDetail>.projectSummary .projectSummaryDescription
+    .container>.projectSummary .projectSummaryDescription
     {
         font-size: 26px;
         font-family: 'Darker Grotesque', sans-serif;
         word-wrap: break-word;
+    }
+    .project .scenarioContainer
+    {
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+
+    .scenarioContainer .projectScenarioItem
+    {
+        padding-bottom: 50px;
+    }
+
+    .ScenarioItemImg img
+    {
+        width: 100%;
+    }
+
+    .ScenarioItemDesc
+    {
+        font-size: 26px;
+        font-family: 'Darker Grotesque', sans-serif;
+        word-wrap: break-word;
+        line-height: 28px;
     }
 }
   /* Tablet Styles */
@@ -130,13 +136,14 @@
         margin: 80px 10px;
     }
 
-    .project .titleContainer
+    .project .container
     {
         width: 90%;
         margin: 0 auto;
+        padding-bottom: 80px;
     }
 
-    .project .titleContainer .title
+    .project .container .title
     {
         font-size: 52px;
         font-family: 'Darker Grotesque', sans-serif;
@@ -144,49 +151,41 @@
         font-weight: bold;
         padding-bottom: 50px;
     }
-    .project .titleContainer .subTitle
+    .project .container .subTitle
     {
         font-size: 24px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#bdc4c8;
         font-weight: bold;
     }
-    .project .titleContainer .description
+    .project .container .description
     {
         font-size: 26px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
-        padding-bottom: 50px;
         line-height: 28px;
     }
 
-    .project .carouselContainer
-    {
-        width: 90%;
-        margin: 0 auto;
-        padding-bottom: 100px;
-    }
-
-    .project .projectDetail
+    .project .container
     {
         width: 90%;
         margin: 0 auto;
     }
 
-    .project .projectDetail .projectLanguage
+    .project .container .projectLanguage
     {
         width: 100%;
         position: relative;
         padding-bottom: 50px;
     }
 
-    .project .projectDetail .projectSummary
+    .project .container .projectSummary
     {
         width: 100%;
         position: relative;
     }
 
-    .projectDetail .projectSummary .projectSummaryGrid 
+    .container .projectSummary .projectSummaryGrid 
     {
         margin: 0;
         position: relative;
@@ -197,18 +196,16 @@
         grid-auto-rows: min-content;
         grid-auto-flow: dense;
         grid-gap: 30px;
-        padding-bottom: 40px;
     }
-    .projectDetail .projectSummary .projectSummaryGrid .projectSummaryCell
+    .container .projectSummary .projectSummaryGrid .projectSummaryCell
     {
         width: 100%;
         height: 100%;
         position: relative;
         grid-column-end: span 1;
         grid-row-end: span 1;
-        border-radius: 10px;
     }
-    .projectDetail>.projectSummary .projectSummaryTitles
+    .container>.projectSummary .projectSummaryTitles
     {
         font-size: 30px;
         font-weight: bold;
@@ -216,11 +213,35 @@
         padding-bottom: 10px;
     }
 
-    .projectDetail>.projectSummary .projectSummaryDescription
+    .container>.projectSummary .projectSummaryDescription
     {
-        font-size: 24px;
+        font-size: 26px;
         font-family: 'Darker Grotesque', sans-serif;
         word-wrap: break-word;
+    }
+
+    .project .scenarioContainer
+    {
+        padding-top: 80px;
+        padding-bottom: 0px;
+    }
+
+    .scenarioContainer .projectScenarioItem
+    {
+        padding-bottom: 50px;
+    }
+
+    .ScenarioItemImg img
+    {
+        width: 100%;
+    }
+
+    .ScenarioItemDesc
+    {
+        font-size: 26px;
+        font-family: 'Darker Grotesque', sans-serif;
+        word-wrap: break-word;
+        line-height: 28px;
     }
 }
 /* Tablet Styles */
@@ -230,13 +251,14 @@
         margin: 80px 10px;
     }
 
-    .project .titleContainer
+    .project .container
     {
         width: 90%;
         margin: 0 auto;
+        padding-bottom: 100px;
     }
 
-    .project .titleContainer .title
+    .project .container .title
     {
         font-size: 64px;
         font-family: 'Darker Grotesque', sans-serif;
@@ -244,49 +266,38 @@
         font-weight: bold;
         padding-bottom: 50px;
     }
-    .project .titleContainer .subTitle
+    .project .container .subTitle
     {
         font-size: 26px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#bdc4c8;
         font-weight: bold;
     }
-    .project .titleContainer .description
+    .project .container .description
     {
         font-size: 28px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
-        padding-bottom: 50px;
         line-height: 28px;
     }
-
-    .project .carouselContainer
+    .project .container.carouselContainer
     {
-        width: 90%;
-        margin: 0 auto;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
     }
-
-    .project .projectDetail
-    {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .project .projectDetail .projectLanguage
+    .project .container .projectLanguage
     {
         width: 100%;
         position: relative;
         padding-bottom: 50px;
     }
 
-    .project .projectDetail .projectSummary
+    .project .container .projectSummary
     {
         width: 100%;
         position: relative;
     }
 
-    .projectDetail .projectSummary .projectSummaryGrid 
+    .container .projectSummary .projectSummaryGrid 
     {
         margin: 0;
         position: relative;
@@ -297,19 +308,17 @@
         grid-auto-rows: min-content;
         grid-auto-flow: dense;
         grid-gap: 30px;
-        padding-bottom: 50px;
     }
-    .projectDetail .projectSummary .projectSummaryGrid .projectSummaryCell
+    .container .projectSummary .projectSummaryGrid .projectSummaryCell
     {
         width: 100%;
         height: 100%;
         position: relative;
         grid-column-end: span 1;
         grid-row-end: span 1;
-        border-radius: 10px;
     }
     
-    .projectDetail>.projectSummary .projectSummaryTitles
+    .container>.projectSummary .projectSummaryTitles
     {
         font-size: 32px;
         font-weight: bold;
@@ -317,11 +326,34 @@
         padding-bottom: 10px;
     }
 
-    .projectDetail>.projectSummary .projectSummaryDescription
+    .container>.projectSummary .projectSummaryDescription
     {
         font-size: 26px;
         font-family: 'Darker Grotesque', sans-serif;
         word-wrap: break-word;
+    }
+    .project .scenarioContainer
+    {
+        padding-top: 100px;
+        padding-bottom: 0px;
+    }
+
+    .scenarioContainer .projectScenarioItem
+    {
+        padding-bottom: 50px;
+    }
+
+    .ScenarioItemImg img
+    {
+        width: 100%;
+    }
+
+    .ScenarioItemDesc
+    {
+        font-size: 26px;
+        font-family: 'Darker Grotesque', sans-serif;
+        word-wrap: break-word;
+        line-height: 28px;
     }
 }
   
@@ -332,13 +364,14 @@
         margin: 160px 30px;
     }
 
-    .project .titleContainer
+    .project .container
     {
         width: 90%;
         margin: 0 auto;
+        padding-bottom: 100px;
     }
 
-    .project .titleContainer .title
+    .project .container .title
     {
         font-size: 72px;
         font-family: 'Darker Grotesque', sans-serif;
@@ -347,7 +380,7 @@
         padding-bottom: 100px;
     }
 
-    .project .titleContainer .subTitle
+    .project .container .subTitle
     {
         font-size: 32px;
         font-family: 'Darker Grotesque', sans-serif;
@@ -355,42 +388,27 @@
         font-weight: bold;
     }
 
-    .project .titleContainer .description
+    .project .container .description
     {
         font-size: 34px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
-        padding-bottom: 50px;
     }
 
-    .project .carouselContainer
-    {
-        width: 90%;
-        margin: 0 auto;
-        padding-bottom: 100px;
-    }
-
-    .project .projectDetail
-    {
-        width: 90%;
-        margin: 0 auto;
-        padding-bottom: 100px;
-    }
-
-    .project .projectDetail .projectLanguage
+    .project .container .projectLanguage
     {
         width: 100%;
         position: relative;
         padding-bottom: 50px;
     }
 
-    .project .projectDetail .projectSummary
+    .project .container .projectSummary
     {
         width: 100%;
         position: relative;
     }
 
-    .projectDetail .projectSummary .projectSummaryGrid 
+    .container .projectSummary .projectSummaryGrid 
     {
         margin: 0;
         position: relative;
@@ -402,16 +420,15 @@
         grid-auto-flow: dense;
         grid-gap: 30px;
     }
-    .projectDetail .projectSummary .projectSummaryGrid .projectSummaryCell
+    .container .projectSummary .projectSummaryGrid .projectSummaryCell
     {
         width: 100%;
         height: 100%;
         position: relative;
         grid-column-end: span 1;
         grid-row-end: span 1;
-        border-radius: 10px;
     }
-    .projectDetail>.projectSummary .projectSummaryTitles
+    .container>.projectSummary .projectSummaryTitles
     {
         font-size: 38px;
         font-weight: bold;
@@ -419,10 +436,33 @@
         padding-bottom: 10px;
     }
 
-    .projectDetail>.projectSummary .projectSummaryDescription
+    .container>.projectSummary .projectSummaryDescription
     {
         font-size: 32px;
         font-family: 'Darker Grotesque', sans-serif;
         word-wrap: break-word;
+    }
+    .project .scenarioContainer
+    {
+        padding-top: 100px;
+        padding-bottom: 0px;
+    }
+
+    .scenarioContainer .projectScenarioItem
+    {
+        padding-bottom: 50px;
+    }
+
+    .ScenarioItemImg img
+    {
+        width: 100%;
+    }
+
+    .ScenarioItemDesc
+    {
+        font-size: 32px;
+        font-family: 'Darker Grotesque', sans-serif;
+        word-wrap: break-word;
+        line-height: 28px;
     }
 }

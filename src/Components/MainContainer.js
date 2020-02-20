@@ -7,6 +7,7 @@ import Project from './Body/Project'
 import Footer from './Footer/Footer'
 
 import '../css/Main.css'
+import '../css/Common.css'
 
 export default class MainContainer extends React.PureComponent
 {

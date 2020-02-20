@@ -3,6 +3,7 @@ import React from 'react'
 import ProjectTitle from './ProjectContents/ProjectTitle'
 import Carousel from './ProjectContents/Carousel'
 import ProjectDetail from './ProjectContents/ProjectDetail'
+import ProjectScenario from './ProjectContents/ProjectScenario'
 
 import { getServerWithParams, PROJECTDETAIL } from '../../APIROUTE'
 
@@ -15,18 +16,7 @@ export default class Project extends React.PureComponent
         super(props)
         this.state = {
             isLoaded : false,
-            project : {
-                id: 1,
-                name: "",
-                descriptions: "",
-                scale: 0,
-                priority: 0,
-                team: "",
-                period: 0,
-                imgsrc: [],
-                types: [],     
-                roles: []
-            }
+            project : {}
         }
     }
     componentDidMount()
@@ -44,10 +34,11 @@ export default class Project extends React.PureComponent
                 {
                     this.state.isLoaded &&
                     <div>
-                        <ProjectTitle project={this.state.project}/>
-                        <Carousel project={this.state.project}/>
-                        <ProjectDetail project={this.state.project}/>
+                        <ProjectTitle title={this.state.project.title}/>
+                        <Carousel source={this.state.project.source}/>
+                        <ProjectDetail details={this.state.project.details}/>
                         <hr/>
+                        <ProjectScenario scenario={this.state.project.source}/>
                     </div>
                 }
             </div>
