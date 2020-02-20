@@ -8,15 +8,15 @@ export default class ProjectTitle extends React.PureComponent
     render()
     {
         return(
-            <div className="titleContainer">
+            <div className="container titleContainer">
                 <div className="title">
-                    {this.props.project.projectTitle}
+                    {this.props.title.projectTitle}
                     <div className="subTitle">
-                        {this.props.project.type}
+                        {this.props.title.type}
                     </div>
                 </div>
                 <div className="description">
-                    {this.props.project.projectDescription}
+                    {this.props.title.projectDescription}
                 </div>
             </div>
         )

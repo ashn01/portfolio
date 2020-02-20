@@ -10,11 +10,11 @@ export default class HomeTitle extends React.PureComponent
         return(
             <div className="titleContainer">
                 <div className="title">
-                    Hello Visitor ! Development is in progress !
+                    Hello, I'm a software developer.
                 </div>
                 <div className="description">
-                    Most of features are already developed. Sorry for inconvenience and Thank you for visiting my portfolio web page. you can trace development progress on my github page.
-                    <br/><a href='https://github.com/ashn01/portfolio' target="_blank" rel="noopener noreferrer">github</a>
+                    <p>I'm curious individual, explorer, and self-starter. I have serious passion for computer programming. I reveal and learn new skills and enhance my ability. </p>
+                    <p>Let me show you what I imagined and how I implemented.</p>
                 </div>
             </div>
         )

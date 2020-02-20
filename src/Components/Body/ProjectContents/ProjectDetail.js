@@ -6,10 +6,22 @@ export default class ProjectDetail extends React.PureComponent
     render()
     {
         return (
-            <div className="projectDetail">
+            <div className="container">
+                {
+                    this.props.details.link &&
+                    (
+                        <div className="btnParent">
+                            <div className="btn" onClick={()=>{window.open(this.props.details.link)}}>
+                                <p>
+                                    View Live
+                                </p>
+                            </div>
+                        </div>
+                    )
+                }
                 <div className = "projectLanguage" > 
                     {
-                        this.props.project.languages.map((v, i) => {
+                        this.props.details.languages.map((v, i) => {
                             return v
                         })
                     } 
@@ -22,7 +34,7 @@ export default class ProjectDetail extends React.PureComponent
                                 Project Type
                             </div>
                             <div className="projectSummaryDescription">
-                                {this.props.project.types.map((v,i)=>{
+                                {this.props.details.types.map((v,i)=>{
                                     return <div key={i}>{v}</div>
                                 })}
                             </div>
@@ -33,7 +45,7 @@ export default class ProjectDetail extends React.PureComponent
                                 My Role
                             </div>
                             <div className="projectSummaryDescription">
-                                {this.props.project.roles.map((v,i)=>{
+                                {this.props.details.roles.map((v,i)=>{
                                     return <div key={i}>{v}</div>
                                 })}
                             </div>
@@ -44,7 +56,7 @@ export default class ProjectDetail extends React.PureComponent
                                 Period
                             </div>
                             <div className="projectSummaryDescription">
-                                {this.props.project.period}
+                                {this.props.details.period}
                             </div>
                         </div>
                         <div className="projectSummaryCell">
@@ -53,7 +65,7 @@ export default class ProjectDetail extends React.PureComponent
                                 Team
                             </div>
                             <div className="projectSummaryDescription">
-                                {this.props.project.team}
+                                {this.props.details.team}
                             </div>
                         </div>
                     </div>

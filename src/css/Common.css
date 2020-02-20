@@ -1,0 +1,137 @@
+hr{
+    width: 90%;
+    background-color: #D7E0DE;
+    opacity: 0.4;
+}
+
+.btnParent
+{
+    margin-bottom: 50px;
+}
+
+.bar
+{
+    width: 20px;
+    height: 2px;
+    background-color: #4fcdae;
+}
+
+.btn:hover 
+{
+    background-color: rgb(49, 99, 207);
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 599px) {
+    .btn
+    {
+        background-color: #5E92FF;
+        border-radius: 5px;
+        width: 200px;
+        height: 50px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .btn p
+    {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFFFFF;
+        font-weight: bold;
+        font-family: 'Darker Grotesque', sans-serif;
+        font-size: 20px;
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (min-width: 600px) and (max-width: 999px) {
+    .btn
+    {
+        background-color: #5E92FF;
+        border-radius: 5px;
+        width: 200px;
+        height: 50px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .btn p
+    {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFFFFF;
+        font-weight: bold;
+        font-family: 'Darker Grotesque', sans-serif;
+        font-size: 20px;
+    }
+}
+  
+/* Tablet Styles */
+@media only screen and (min-width: 1000px) and (max-width: 1599px) {
+    .btn
+    {
+        background-color: #5E92FF;
+        border-radius: 5px;
+        width: 200px;
+        height: 50px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .btn p
+    {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFFFFF;
+        font-weight: bold;
+        font-family: 'Darker Grotesque', sans-serif;
+        font-size: 18px;
+    }
+}
+  
+/* Desktop Styles */
+@media only screen and (min-width: 1600px) {
+
+    .btn
+    {
+        background-color: #5E92FF;
+        border-radius: 5px;
+        width: 200px;
+        height: 50px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .btn p
+    {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFFFFF;
+        font-weight: bold;
+        font-family: 'Darker Grotesque', sans-serif;
+        font-size: 20px;
+    }
+}
