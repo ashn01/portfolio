@@ -8,6 +8,17 @@ hr{
     background-color: #D7E0DE;
     opacity: 0.4;
 }
+.about .aboutDetailLeft .aboutBtn:hover 
+{
+    background-color: rgb(49, 99, 207);
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 599px) {
     .about .titleContainer

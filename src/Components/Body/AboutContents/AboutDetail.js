@@ -13,7 +13,7 @@ export default class AboutDetail extends React.PureComponent
                         <img src={process.env.PUBLIC_URL + "/portrait.png"} alt="Portrait" onError={(e)=>{e.target.onerror = null; e.target.src=process.env.PUBLIC_URL + "/empty.png"}}/>
                     </div>
                     <div>
-                        <div className="aboutBtn" onClick={()=>{console.log("do Something")}}>
+                        <div className="aboutBtn" onClick={()=>{window.location.href=`mailto:ykim185@myseneca.ca`}}>
                             <p>
                                 Get in Touch!
                             </p>
@@ -24,10 +24,18 @@ export default class AboutDetail extends React.PureComponent
                 <div className="aboutDetailRight">
                     <div>
                         <div className="title">
-                            Hello I am something something
+                            Hello! I am a Junior Software Developer
                         </div>
                         <div className="description">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            <p>
+                                I'm a Junior developer who recently graduated from Seneca college with an advanced diploma in Computer Programming and Analysis, where I showed my passion and interest in computer programming.
+                            </p>
+                            <p>
+                                I worked as an automation developer co-op for a year at Caseware International, where I grasped sense of teamwork, agile methodologies, and time management. I am currently looking for Software developer position, where I can contribute to and show potential. 
+                            </p>
+                            <p>
+                                Thank you for visiting Youngmin's portfolio!
+                            </p>
                         </div>
                         <div className="aboutInfo">
                             <div>
@@ -36,7 +44,8 @@ export default class AboutDetail extends React.PureComponent
                                     Personality
                                 </div>
                                 <div className="aboutSummaryDescription">
-                                    ppp
+                                    Team player<br/>
+
                                 </div>
                             </div>
                             <div>
@@ -45,7 +54,8 @@ export default class AboutDetail extends React.PureComponent
                                     Experience
                                 </div>
                                 <div className="aboutSummaryDescription">
-                                    abc
+                                    Software developer<br/>
+                                    Automation developer
                                 </div>
                             </div>
                             <div>
@@ -63,7 +73,7 @@ export default class AboutDetail extends React.PureComponent
                                     Skillset
                                 </div>
                                 <div className="aboutSummaryDescription">
-                                    temp
+                                    C/C++, C#, Java, Javascript, ReactJS, NodeJS, AWS, Azure, Relational Database, NoSQL, Parallel Programming with Cuda, Android, Objective-C, Swift, Git, Jira, Jenkins, Agile, Network programming, Windows, MacOS, Linux 
                                 </div>
                             </div>
                         </div>

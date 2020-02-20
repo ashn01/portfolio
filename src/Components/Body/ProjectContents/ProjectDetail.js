@@ -8,14 +8,16 @@ export default class ProjectDetail extends React.PureComponent
         return (
             <div className="projectDetail">
                 <div className="projectImage">
-                    <img src={process.env.PUBLIC_URL + "/images/" +this.props.project.imgsrc[0]} alt="project" onError={(e)=>{e.target.onerror = null; e.target.src=process.env.PUBLIC_URL + "/empty.png"}}/>
-                    
-                    <div className="projectLanguage">
-                        {
-                            this.props.project.languages.map((v,i)=>{
-                                return v
-                            })
-                        }
+                    <div className="vCenter">
+                        <img src={process.env.PUBLIC_URL + "/images/" +this.props.project.imgsrc[0]} alt="project" onError={(e)=>{e.target.onerror = null; e.target.src=process.env.PUBLIC_URL + "/empty.png"}}/>
+                        
+                        <div className="projectLanguage">
+                            {
+                                this.props.project.languages.map((v,i)=>{
+                                    return v
+                                })
+                            }
+                        </div>
                     </div>
                 </div>
                 <div className="projectSummary">

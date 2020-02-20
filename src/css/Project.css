@@ -88,6 +88,15 @@
         width: 90%;
         margin: 0 auto;
         display: block;
+        padding-bottom: 30px;
+    }
+
+    .project .projectDetail .projectImage .projectLanguage
+    {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .project .projectDetail .projectSummary
@@ -180,6 +189,17 @@
         float: left;
     }
 
+    .project .projectDetail .projectImage .vCenter
+    {
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
     .project .projectDetail .projectImage img
     {
         position: relative;
@@ -188,8 +208,15 @@
         display: block;
         max-width: 100%;
         height: auto;
-        top: 50%;
-        transform: translateY(-50%);
+        padding-bottom: 50px;
+    }
+
+    .project .projectDetail .projectImage .projectLanguage
+    {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .project .projectDetail .projectSummary
@@ -285,6 +312,17 @@
         float: left;
     }
 
+    .project .projectDetail .projectImage .vCenter
+    {
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
     .project .projectDetail .projectImage img
     {
         position: relative;
@@ -293,8 +331,15 @@
         display: block;
         max-width: 100%;
         height: auto;
-        top: 50%;
-        transform: translateY(-50%);
+        padding-bottom: 50px;
+    }
+
+    .project .projectDetail .projectImage .projectLanguage
+    {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .project .projectDetail .projectSummary
@@ -307,7 +352,7 @@
     .projectDetail>.projectSummary>div
     {
         margin: 0;
-        padding: 0 100px;
+        padding: 0 0 0 100px;
         position: relative;
         top: 50%;
         -ms-transform: translateY(-50%);
@@ -319,7 +364,7 @@
     }
     .projectDetail>.projectSummary .projectSummaryTitles
     {
-        font-size: 24px;
+        font-size: 26px;
         font-weight: bold;
         font-family: 'Darker Grotesque', sans-serif;
         padding-bottom: 10px;
@@ -327,7 +372,7 @@
 
     .projectDetail>.projectSummary .projectSummaryDescription
     {
-        font-size: 18px;
+        font-size: 22px;
         font-family: 'Darker Grotesque', sans-serif;
         word-wrap: break-word;
     }
@@ -393,6 +438,16 @@
         position: relative;
         float: left;
     }
+    .project .projectDetail .projectImage .vCenter
+    {
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
 
     .project .projectDetail .projectImage img
     {
@@ -402,8 +457,7 @@
         display: block;
         max-width: 100%;
         height: auto;
-        top: 50%;
-        transform: translateY(-50%);
+        padding-bottom: 50px;
     }
 
     .project .projectDetail .projectImage .projectLanguage
@@ -412,11 +466,6 @@
         width: 90%;
         margin: 0 auto;
         text-align: center;
-        display: block;
-        max-width: 100%;
-        height: auto;
-        top: 30%;
-        transform: translateY(-50%);
     }
 
     .project .projectDetail .projectSummary
@@ -429,7 +478,7 @@
     .projectDetail>.projectSummary>div
     {
         margin: 0;
-        padding: 0 200px;
+        padding-left: 0 200px;
         position: relative;
         top: 50%;
         -ms-transform: translateY(-50%);
@@ -441,7 +490,7 @@
     }
     .projectDetail>.projectSummary .projectSummaryTitles
     {
-        font-size: 24px;
+        font-size: 28px;
         font-weight: bold;
         font-family: 'Darker Grotesque', sans-serif;
         padding-bottom: 10px;
@@ -449,7 +498,7 @@
 
     .projectDetail>.projectSummary .projectSummaryDescription
     {
-        font-size: 18px;
+        font-size: 24px;
         font-family: 'Darker Grotesque', sans-serif;
         word-wrap: break-word;
     }
