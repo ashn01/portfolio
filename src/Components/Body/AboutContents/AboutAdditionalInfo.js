@@ -16,7 +16,11 @@ export default class AboutDetail extends React.PureComponent
                         </div>
                         <div className="aboutSummaryDescription">
                             Team player<br/>
-
+                            Responsible<br/>
+                            Self-starter<br/>
+                            Flexible<br/>
+                            Eager<br/>
+                            adaptable<br/>
                         </div>
                     </div>
                     <div className="aboutInfoGridCell">
@@ -25,17 +29,8 @@ export default class AboutDetail extends React.PureComponent
                                 Experience
                         </div>
                         <div className="aboutSummaryDescription">
-                            Software developer<br/>
-                               Automation developer
-                        </div>
-                    </div>
-                    <div className="aboutInfoGridCell">
-                        <div className="bar"/>
-                           <div className="aboutSummaryTitles">
-                            Period
-                        </div>
-                        <div className="aboutSummaryDescription">
-                            temp
+                            1 year - Software developer<br/>
+                            1 year - Automation developer
                         </div>
                     </div>
                     <div className="aboutInfoGridCell">

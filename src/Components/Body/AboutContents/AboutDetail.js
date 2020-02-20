@@ -10,7 +10,7 @@ export default class AboutDetail extends React.PureComponent
             <div className="aboutDetail">
                 <div className="aboutDetailLeft">
                     <div>
-                        <img src={process.env.PUBLIC_URL + "/portrait.png"} alt="Portrait" onError={(e)=>{e.target.onerror = null; e.target.src=process.env.PUBLIC_URL + "/empty.png"}}/>
+                        <img src={process.env.PUBLIC_URL + "/profile.png"} alt="Portrait" onError={(e)=>{e.target.onerror = null; e.target.src=process.env.PUBLIC_URL + "/empty.png"}}/>
                     </div>
                     <div className="btnParent">
                         <div className="btn" onClick={()=>{window.location.href=`mailto:ykim185@myseneca.ca`}}>

@@ -32,7 +32,7 @@ export default class Projects extends React.PureComponent
                         this.props.projects.map((v,i)=>{
                             return (
                                 <div key={i} className={`projectScale${v.scale}`}>
-                                    <img src={process.env.PUBLIC_URL + "images/" + v.repimg} alt={v.projectTitle} className="projectImg" 
+                                    <img src={process.env.PUBLIC_URL + "images/" +v.id +"/"+ v.repimg} alt={v.projectTitle} className="projectImg" 
                                             onError={(e)=>{e.target.onerror = null; e.target.src=process.env.PUBLIC_URL + "/empty.png"}}
                                             />
                                     <Link to={`/project/${v.id}`}>
