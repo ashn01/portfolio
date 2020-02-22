@@ -13,7 +13,7 @@ export default class ProjectDetail extends React.PureComponent
                         <div className="btnParent">
                             <div className="btn" onClick={()=>{window.open(this.props.details.link)}}>
                                 <p>
-                                    View Live
+                                    View {this.props.details.availability}
                                 </p>
                             </div>
                         </div>

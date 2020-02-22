@@ -35,10 +35,10 @@ export default class Project extends React.PureComponent
                     this.state.isLoaded &&
                     <div>
                         <ProjectTitle title={this.state.project.title}/>
-                        <Carousel id={this.state.project.id} source={this.state.project.source}/>
+                        <Carousel title={this.state.project.title.projectTitle} source={this.state.project.source}/>
                         <ProjectDetail details={this.state.project.details}/>
                         <hr/>
-                        <ProjectScenario id={this.state.project.id} scenario={this.state.project.source}/>
+                        <ProjectScenario title={this.state.project.title.projectTitle} scenario={this.state.project.source}/>
                     </div>
                 }
             </div>

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import {RESOURCES} from '../../../APIROUTE'
+
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -18,7 +20,7 @@ export default class Carousel extends React.PureComponent
                             {
                                 this.props.source.map((v,i)=>{
                                     return (
-                                        <img key={i} alt={i} src={process.env.PUBLIC_URL + "/images/"+this.props.id+"/" +v.src} 
+                                        <img key={i} alt={i} src={RESOURCES+this.props.title+"/"+v.src} 
                                         onError={(e)=>{e.target.onerror = null; e.target.src=process.env.PUBLIC_URL + "/empty.png"}}/>
                                     )
                                 })
