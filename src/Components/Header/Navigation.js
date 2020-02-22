@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import $ from 'jquery'
 import { Elastic  } from 'react-burgers'
  

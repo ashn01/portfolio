@@ -28,6 +28,15 @@ hr{
     cursor: pointer;
 }
 
+.owl-carousel .owl-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 90vw;
+}
+
 @media only screen and (max-width: 599px) {
     .btn
     {
