@@ -1,5 +1,6 @@
 import React from 'react'
 
+import {RESOURCES} from '../../../APIROUTE'
 
 export default class ProjectScenario extends React.PureComponent
 {
@@ -13,7 +14,7 @@ export default class ProjectScenario extends React.PureComponent
                         return (
                             <div key={i} className="projectScenarioItem">
                                 <div className="ScenarioItemImg">
-                                    <img key={i} alt={i} src={process.env.PUBLIC_URL + "/images/"+this.props.id+"/" +v.src} 
+                                    <img key={i} alt={i} src={RESOURCES+this.props.title+"/"+v.src} 
                                         onError={(e)=>{e.target.onerror = null; e.target.src=process.env.PUBLIC_URL + "/empty.png"}}/>
                                 </div>
                                 <div className="ScenarioItemDesc">

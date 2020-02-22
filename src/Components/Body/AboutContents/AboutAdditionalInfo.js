@@ -20,7 +20,7 @@ export default class AboutDetail extends React.PureComponent
                             Self-starter<br/>
                             Flexible<br/>
                             Eager<br/>
-                            adaptable<br/>
+                            Adaptable<br/>
                         </div>
                     </div>
                     <div className="aboutInfoGridCell">
