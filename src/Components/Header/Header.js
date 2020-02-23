@@ -13,8 +13,7 @@ export default class Header extends React.PureComponent
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function () {
             var currentScrollPos = window.pageYOffset;
-            console.log(currentScrollPos)
-            if(currentScrollPos == 0)
+            if(currentScrollPos <= 0)
             {
                 $(".header").removeClass("active")
             }else if (prevScrollpos < currentScrollPos) {
