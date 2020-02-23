@@ -97,7 +97,7 @@ body.active
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-
+        -webkit-transform: translate(-50%, -50%);
         list-style-type: none;
         padding-left: 0px;
         text-align: center;
@@ -134,7 +134,7 @@ body.active
         top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
-
+        -webkit-transform: translate(-50%, -50%);
         list-style-type: none;
         padding-left: 0px;
         text-align: center;
@@ -225,7 +225,7 @@ body.active
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-
+        -webkit-transform: translate(-50%, -50%);
         list-style-type: none;
         padding-left: 0px;
         text-align: center;
@@ -261,7 +261,7 @@ body.active
         top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
-
+        -webkit-transform: translate(-50%, -50%);
         list-style-type: none;
         padding-left: 0px;
         text-align: center;
@@ -352,7 +352,7 @@ body.active
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-
+        -webkit-transform: translate(-50%, -50%);
         list-style-type: none;
         padding-left: 0px;
         text-align: center;
@@ -388,7 +388,7 @@ body.active
         top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
-
+        -webkit-transform: translate(-50%, -50%);
         list-style-type: none;
         padding-left: 0px;
         text-align: center;

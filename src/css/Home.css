@@ -10,6 +10,7 @@
     width: 7px;
     height: 7px;
     transform: translateY(-10%);
+    -webkit-transform: translateY(-10%);
     padding: 0px 3px;
 }
 

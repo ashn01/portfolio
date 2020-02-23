@@ -61,6 +61,7 @@ hr{
         top: 5%;
         left: 50%;
         transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
         color: #FFFFFF;
         font-weight: bold;
         font-family: 'Darker Grotesque', sans-serif;
@@ -88,6 +89,7 @@ hr{
         top: 5%;
         left: 50%;
         transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
         color: #FFFFFF;
         font-weight: bold;
         font-family: 'Darker Grotesque', sans-serif;
@@ -115,6 +117,7 @@ hr{
         top: 10%;
         left: 50%;
         transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
         color: #FFFFFF;
         font-weight: bold;
         font-family: 'Darker Grotesque', sans-serif;
@@ -143,6 +146,7 @@ hr{
         top: 5%;
         left: 50%;
         transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
         color: #FFFFFF;
         font-weight: bold;
         font-family: 'Darker Grotesque', sans-serif;

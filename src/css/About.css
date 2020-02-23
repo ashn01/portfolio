@@ -71,6 +71,7 @@
         top: 5%;
         left: 50%;
         transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
         color: #FFFFFF;
         font-weight: bold;
         font-family: 'Darker Grotesque', sans-serif;
@@ -221,6 +222,7 @@
         top: 5%;
         left: 50%;
         transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
         color: #FFFFFF;
         font-weight: bold;
         font-family: 'Darker Grotesque', sans-serif;
@@ -371,6 +373,7 @@
         top: 10%;
         left: 50%;
         transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
         color: #FFFFFF;
         font-weight: bold;
         font-family: 'Darker Grotesque', sans-serif;
@@ -522,6 +525,7 @@
         top: 5%;
         left: 50%;
         transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
         color: #FFFFFF;
         font-weight: bold;
         font-family: 'Darker Grotesque', sans-serif;

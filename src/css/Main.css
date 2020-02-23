@@ -9,6 +9,8 @@
 .main.active
 {
     transform: translateX(-150px);
+    
+    -webkit-transform: translateX(-150px);
 }
 /* Mobile Styles */
 @media only screen and (max-width: 636px) {
