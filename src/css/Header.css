@@ -89,6 +89,7 @@ body.active
     {
         opacity: 1;
         visibility: visible;
+        z-index: 9;
     }
 
     .navStyle
@@ -217,6 +218,7 @@ body.active
     {
         opacity: 1;
         visibility: visible;
+        z-index: 9;
     }
 
     .navStyle
@@ -344,6 +346,7 @@ body.active
     {
         opacity: 1;
         visibility: visible;
+        z-index: 9;
     }
 
     .navStyle
