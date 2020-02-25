@@ -13,22 +13,25 @@ export default class Navigation extends React.PureComponent
         this.state = {
             toggleMenu : false
         }
-        var unsubscribe;
+        this.unsubscribe={};
     }
 
     componentDidMount()
     {
-        this.unsubscribe = store.subscribe(()=>this.setState({toggleMenu : store.getState().navStater.status}))
+        this.unsubscribe = store.subscribe(
+            ()=>
+            this.setState({toggleMenu : store.getState().navStater.status})
+            )
     }
 
     componentWillUnmount()
     {
-        this.unsubscribe.unsubscribe();
+        this.unsubscribe()
     }
+
     expandMenu()
     {
         this.props.nav();
-        //store.subscribe(()=>this.setState({toggleMenu : store.getState().navStater.status}))
         $(".navPanel").toggleClass('active')
         $(".burger").toggleClass('active')
         $("body").toggleClass('active')

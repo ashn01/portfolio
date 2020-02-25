@@ -16,7 +16,13 @@ hr{
     background-color: #4fcdae;
 }
 
-.btn:hover 
+.icons
+{
+    width: 50px;
+    margin: 10px;
+}
+
+.btns:hover 
 {
     background-color: rgb(49, 99, 207);
     border-radius: 5px;
@@ -43,7 +49,7 @@ hr{
 }
 
 @media only screen and (max-width: 599px) {
-    .btn
+    .btns
     {
         background-color: #5E92FF;
         border-radius: 5px;
@@ -55,13 +61,13 @@ hr{
         cursor: pointer;
     }
 
-    .btn p
+    .btns p
     {
         position: absolute;
         top: 5%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, 20%);
+        -webkit-transform: translate(-50%, 20%);
         color: #FFFFFF;
         font-weight: bold;
         font-family: 'Darker Grotesque', sans-serif;
@@ -71,7 +77,7 @@ hr{
 
 /* Mobile Styles */
 @media only screen and (min-width: 600px) and (max-width: 999px) {
-    .btn
+    .btns
     {
         background-color: #5E92FF;
         border-radius: 5px;
@@ -83,13 +89,13 @@ hr{
         cursor: pointer;
     }
 
-    .btn p
+    .btns p
     {
         position: absolute;
         top: 5%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, 20%);
+        -webkit-transform: translate(-50%, 20%);
         color: #FFFFFF;
         font-weight: bold;
         font-family: 'Darker Grotesque', sans-serif;
@@ -99,7 +105,7 @@ hr{
   
 /* Tablet Styles */
 @media only screen and (min-width: 1000px) and (max-width: 1599px) {
-    .btn
+    .btns
     {
         background-color: #5E92FF;
         border-radius: 5px;
@@ -111,13 +117,13 @@ hr{
         cursor: pointer;
     }
 
-    .btn p
+    .btns p
     {
         position: absolute;
         top: 10%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, 20%);
+        -webkit-transform: translate(-50%, 20%);
         color: #FFFFFF;
         font-weight: bold;
         font-family: 'Darker Grotesque', sans-serif;
@@ -128,7 +134,7 @@ hr{
 /* Desktop Styles */
 @media only screen and (min-width: 1600px) {
 
-    .btn
+    .btns
     {
         background-color: #5E92FF;
         border-radius: 5px;
@@ -140,13 +146,13 @@ hr{
         cursor: pointer;
     }
 
-    .btn p
+    .btns p
     {
         position: absolute;
         top: 5%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, 20%);
+        -webkit-transform: translate(-50%, 20%);
         color: #FFFFFF;
         font-weight: bold;
         font-family: 'Darker Grotesque', sans-serif;

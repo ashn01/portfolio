@@ -16,6 +16,5 @@ export default function navStater(state = initialState, action) {
       default:
         return state;
     }
-    console.log(state.status)
   }
   

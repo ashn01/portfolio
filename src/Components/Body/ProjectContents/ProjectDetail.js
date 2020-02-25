@@ -1,5 +1,6 @@
 import React from 'react'
-
+import {OverlayTrigger, Tooltip } from 'react-bootstrap'
+import $ from 'jquery'
 
 export default class ProjectDetail extends React.PureComponent
 {
@@ -11,7 +12,7 @@ export default class ProjectDetail extends React.PureComponent
                     this.props.details.link &&
                     (
                         <div className="btnParent">
-                            <div className="btn" onClick={()=>{window.open(this.props.details.link)}}>
+                            <div className="btns" onClick={()=>{window.open(this.props.details.link)}}>
                                 <p>
                                     View {this.props.details.availability}
                                 </p>
@@ -22,7 +23,10 @@ export default class ProjectDetail extends React.PureComponent
                 <div className = "projectLanguage" > 
                     {
                         this.props.details.languages.map((v, i) => {
-                            return v
+                            return (
+                                    <img    className="icons" 
+                                            src={process.env.PUBLIC_URL + "/icons/"+ v +".png"}/>
+                            )
                         })
                     } 
                 </div>
