@@ -2,7 +2,7 @@ import React from 'react';
 import $ from 'jquery'
 
 import Logo from './Logo'
-import Navigation from './Navigation'
+import NavigationContainer from '../../Containers/NavigationContainer'
 
 import '../../css/Header.css'
 
@@ -32,7 +32,7 @@ export default class Header extends React.PureComponent
                     <Logo/>
                 </div>
                 <div className="headerRight">
-                    <Navigation/>
+                    <NavigationContainer/>
                 </div>
             </div>
         );
