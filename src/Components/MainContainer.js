@@ -1,6 +1,5 @@
 import React from 'react'
 
-import NavPanelContainer from '../Containers/NavPanelContainer'
 import Header from './Header/Header'
 import Home from './Body/Home'
 import About from './Body/About'
@@ -28,7 +27,6 @@ export default class MainContainer extends React.PureComponent
         const contents = this.renderWhat()
         return (
             <div>
-                <NavPanelContainer/>
                 <Header/>
                 <div className="main">
                     {

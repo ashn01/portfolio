@@ -1,6 +1,4 @@
 import React from 'react'
-import {OverlayTrigger, Tooltip } from 'react-bootstrap'
-import $ from 'jquery'
 
 export default class ProjectDetail extends React.PureComponent
 {
@@ -24,7 +22,7 @@ export default class ProjectDetail extends React.PureComponent
                     {
                         this.props.details.languages.map((v, i) => {
                             return (
-                                    <img    className="icons" 
+                                    <img    className="icons" alt={v}
                                             src={process.env.PUBLIC_URL + "/icons/"+ v +".png"}/>
                             )
                         })
