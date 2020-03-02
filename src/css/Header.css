@@ -46,6 +46,7 @@ body.active
     {
         display: block;
         margin: auto;
+        width: 200px;
     }
     
     /* Navigation */
@@ -176,6 +177,7 @@ body.active
     {
         display: block;
         margin: auto;
+        width: 200px;
     }
     
     /* Navigation */
