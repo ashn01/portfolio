@@ -144,9 +144,9 @@ body.active
         overflow: hidden;
         align-items: center;
     }
-
-    .navIcons img{
-        width: 32px;
+    
+    .IconsItem{
+        float: left;
         padding: 20px;
     }
 }
@@ -274,9 +274,9 @@ body.active
         align-items: center;
     }
 
-    .navIcons img{
-        width: 40px;
-        padding: 5px;
+    .IconsItem{
+        float: left;
+        padding: 20px;
     }
 }
 
@@ -402,8 +402,8 @@ body.active
         align-items: center;
     }
 
-    .navIcons img{
-        width: 40px;
+    .IconsItem{
+        float: left;
         padding: 20px;
     }
 }

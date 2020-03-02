@@ -56,14 +56,18 @@ export default class Navigation extends React.PureComponent
                             <a href={process.env.PUBLIC_URL + "/images/YMK_resume.pdf"} target="_blank" rel="noopener noreferrer" onClick={()=>this.expandMenu()}>RESUME</a>
                         </li>
                     </ul>
-                    <div className="navIcons">
+                    <ul className="navIcons">
+                        <li className="IconsItem">
                         <a href="https://www.linkedin.com/in/youngmin-kim-429b88140" target="_blank" rel="noopener noreferrer">
-                            <img src={process.env.PUBLIC_URL + "/linkedinNav.png"} alt="linkedin"/>
+                            <div style={{width:'40px', height:'40px',backgroundSize:'cover',backgroundPosition:'center', backgroundImage:`url('${process.env.PUBLIC_URL + "/linkedinNav.png"}')`}}></div>
                         </a>
+                        </li>
+                        <li className="IconsItem">
                         <a href="https://github.com/ashn01" target="_blank" rel="noopener noreferrer">
-                            <img src={process.env.PUBLIC_URL + "/githubNav.png"} alt="github"/>
+                            <div style={{width:'40px', height:'40px',backgroundSize:'cover',backgroundPosition:'center', backgroundImage:`url('${process.env.PUBLIC_URL + "/githubNav.png"}')`}}></div>
                         </a>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
                 <div className="burger">
                     <Elastic 
