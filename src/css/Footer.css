@@ -16,6 +16,7 @@
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     font-family: 'Darker Grotesque', sans-serif;
     font-weight: normal;
     color: #3a484f;
@@ -28,6 +29,7 @@
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
 
 .footerLink a

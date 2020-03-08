@@ -13,7 +13,7 @@ export default class AboutDetail extends React.PureComponent
                         <img src={process.env.PUBLIC_URL + "/profile.png"} alt="Portrait" onError={(e)=>{e.target.onerror = null; e.target.src=process.env.PUBLIC_URL + "/empty.png"}}/>
                     </div>
                     <div className="btnParent">
-                        <div className="btn" onClick={()=>{window.location.href=`mailto:ykim185@myseneca.ca`}}>
+                        <div className="btns" onClick={()=>{window.location.href=`mailto:ykim185@myseneca.ca`}}>
                             <p>
                                 Get in Touch!
                             </p>
@@ -24,11 +24,11 @@ export default class AboutDetail extends React.PureComponent
                 <div className="aboutDetailRight">
                     <div>
                         <div className="title">
-                            Hello! I am a Junior Software Developer
+                            I am a Software Developer
                         </div>
                         <div className="description">
                             <p>
-                                I'm a Junior developer who recently graduated from Seneca college with an advanced diploma in Computer Programming and Analysis, where I showed my passion and interest in computer programming.
+                                I am a Junior developer who recently graduated from Seneca college with an advanced diploma in Computer Programming and Analysis, where I showed my passion and interest in computer programming.
                             </p>
                             <p>
                                 I worked as an automation developer co-op for a year at Caseware International, where I grasped sense of teamwork, agile methodologies, and time management. I am currently looking for Software developer position, where I can contribute to and show potential. 

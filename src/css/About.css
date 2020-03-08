@@ -46,35 +46,12 @@
 
     .about .aboutDetailLeft>div
     {
-        margin: 20px 30px;
+        margin: 30px 30px;
     }
 
     .about .aboutDetailLeft img
     {
         width: 100%;
-    }
-    .btn
-    {
-        background-color: #5E92FF;
-        border-radius: 5px;
-        width: 200px;
-        height: 50px;
-        margin: 0 auto;
-        text-align: center;
-        position: relative;
-        cursor: pointer;
-    }
-
-    .btn p
-    {
-        position: absolute;
-        top: 5%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #FFFFFF;
-        font-weight: bold;
-        font-family: 'Darker Grotesque', sans-serif;
-        font-size: 20px;
     }
 
     .about .aboutDetailRight
@@ -86,7 +63,7 @@
 
     .about .aboutDetailRight>div
     {
-        margin: 0px 30px;
+        margin: 10px 30px;
     }
 
     .about .aboutDetailRight .title
@@ -195,36 +172,12 @@
 
     .about .aboutDetailLeft>div
     {
-        margin: 20px 50px;
+        margin: 40px 50px;
     }
     
     .about .aboutDetailLeft img
     {
         width: 100%;
-    }
-    
-    .btn
-    {
-        background-color: #5E92FF;
-        border-radius: 5px;
-        width: 200px;
-        height: 50px;
-        margin: 0 auto;
-        text-align: center;
-        position: relative;
-        cursor: pointer;
-    }
-
-    .btn p
-    {
-        position: absolute;
-        top: 5%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #FFFFFF;
-        font-weight: bold;
-        font-family: 'Darker Grotesque', sans-serif;
-        font-size: 20px;
     }
 
     .about .aboutDetailRight
@@ -245,7 +198,7 @@
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         font-weight: bold;
-        text-align: center;
+        text-align: left;
         padding-bottom: 30px;
     }
 
@@ -254,7 +207,7 @@
         font-size: 24px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
-        text-align: center;
+        text-align: left;
         padding-bottom: 40px;
     }
     .aboutAdditionalInfo
@@ -345,36 +298,12 @@
 
     .about .aboutDetailLeft>div
     {
-        margin: 20px 50px;
+        margin: 20px 50px 30px 50px;
     }
 
     .about .aboutDetailLeft img
     {
         width: 100%;
-    }
-
-    .btn
-    {
-        background-color: #5E92FF;
-        border-radius: 5px;
-        width: 200px;
-        height: 50px;
-        margin: 0 auto;
-        text-align: center;
-        position: relative;
-        cursor: pointer;
-    }
-
-    .btn p
-    {
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #FFFFFF;
-        font-weight: bold;
-        font-family: 'Darker Grotesque', sans-serif;
-        font-size: 18px;
     }
 
     .about .aboutDetailRight
@@ -395,7 +324,7 @@
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         font-weight: bold;
-        text-align: center;
+        text-align: left;
         padding-bottom: 30px;
     }
 
@@ -404,7 +333,7 @@
         font-size: 26px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
-        text-align: center;
+        text-align: left;
         padding-bottom: 40px;
     }
 
@@ -496,36 +425,12 @@
 
     .about .aboutDetailLeft>div
     {
-        margin: 20px 50px;
+        margin: 20px 50px 40px 50px;
     }
 
     .about .aboutDetailLeft img
     {
         width: 100%;
-    }
-
-    .btn
-    {
-        background-color: #5E92FF;
-        border-radius: 5px;
-        width: 200px;
-        height: 50px;
-        margin: 0 auto;
-        text-align: center;
-        position: relative;
-        cursor: pointer;
-    }
-
-    .btn p
-    {
-        position: absolute;
-        top: 5%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #FFFFFF;
-        font-weight: bold;
-        font-family: 'Darker Grotesque', sans-serif;
-        font-size: 20px;
     }
 
     .about .aboutDetailRight
@@ -546,7 +451,7 @@
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
         font-weight: bold;
-        text-align: center;
+        text-align: left;
         padding-bottom: 30px;
     }
 
@@ -555,7 +460,7 @@
         font-size: 24px;
         font-family: 'Darker Grotesque', sans-serif;
         color:#3a484f;
-        text-align: center;
+        text-align: left;
         padding-bottom: 40px;
     }
     .aboutAdditionalInfo

@@ -2,7 +2,7 @@ import React from 'react';
 import $ from 'jquery'
 
 import Logo from './Logo'
-import Navigation from './Navigation'
+import NavigationContainer from '../../Containers/NavigationContainer'
 
 import '../../css/Header.css'
 
@@ -13,7 +13,10 @@ export default class Header extends React.PureComponent
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function () {
             var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos < currentScrollPos) {
+            if(currentScrollPos <= 0)
+            {
+                $(".header").removeClass("active")
+            }else if (prevScrollpos < currentScrollPos) {
                 $(".header").addClass("active")
             } else {
                 $(".header").removeClass("active")
@@ -29,7 +32,7 @@ export default class Header extends React.PureComponent
                     <Logo/>
                 </div>
                 <div className="headerRight">
-                    <Navigation/>
+                    <NavigationContainer/>
                 </div>
             </div>
         );
