@@ -491,5 +491,7 @@ body.active
     {
         display: none;
     }
-
+    .mainComp>.navPanel {
+        display: none;
+    }
 }
