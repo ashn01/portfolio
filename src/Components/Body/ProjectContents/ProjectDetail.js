@@ -7,12 +7,12 @@ export default class ProjectDetail extends React.PureComponent
         return (
             <div className="container">
                 {
-                    this.props.details.link &&
+                    this.props.link &&
                     (
                         <div className="btnParent">
-                            <div className="btns" onClick={()=>{window.open(this.props.details.link)}}>
+                            <div className="btns" onClick={()=>{window.open(this.props.link)}}>
                                 <p>
-                                    View {this.props.details.availability}
+                                    View {this.props.availability}
                                 </p>
                             </div>
                         </div>
@@ -20,10 +20,10 @@ export default class ProjectDetail extends React.PureComponent
                 }
                 <div className = "projectLanguage" > 
                     {
-                        this.props.details.languages.map((v, i) => {
+                        this.props.languages&&this.props.languages.map((v, i) => {
                             return (
-                                    <img    className="icons" alt={v}
-                                            src={process.env.PUBLIC_URL + "/icons/"+ v +".png"}/>
+                                    <img    className="icons" alt={v.language} key={i} title={v.language}
+                                            src={process.env.PUBLIC_URL + "/icons/"+ v.language +".png"}/>
                             )
                         })
                     } 
@@ -36,8 +36,8 @@ export default class ProjectDetail extends React.PureComponent
                                 Project Type
                             </div>
                             <div className="projectSummaryDescription">
-                                {this.props.details.types.map((v,i)=>{
-                                    return <div key={i}>{v}</div>
+                                {this.props.types&&this.props.types.map((v,i)=>{
+                                    return <div key={i}>{v.type}</div>
                                 })}
                             </div>
                         </div>
@@ -47,8 +47,8 @@ export default class ProjectDetail extends React.PureComponent
                                 My Role
                             </div>
                             <div className="projectSummaryDescription">
-                                {this.props.details.roles.map((v,i)=>{
-                                    return <div key={i}>{v}</div>
+                                {this.props.roles&&this.props.roles.map((v,i)=>{
+                                    return <div key={i}>{v.role}</div>
                                 })}
                             </div>
                         </div>
@@ -58,7 +58,7 @@ export default class ProjectDetail extends React.PureComponent
                                 Period
                             </div>
                             <div className="projectSummaryDescription">
-                                {this.props.details.period}
+                                {this.props.period}
                             </div>
                         </div>
                         <div className="projectSummaryCell">
@@ -67,7 +67,7 @@ export default class ProjectDetail extends React.PureComponent
                                 Team
                             </div>
                             <div className="projectSummaryDescription">
-                                {this.props.details.team}
+                                {this.props.team}
                             </div>
                         </div>
                     </div>

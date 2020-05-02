@@ -22,8 +22,9 @@ export default class Project extends React.PureComponent
     componentDidMount()
     {
         window.scrollTo(0, 0) // reset scroll to Top
+        
         getServerWithParams(PROJECTDETAIL,this.props.params).then((res)=>{
-            this.setState({isLoaded:true, project:res.data[0]})
+            this.setState({isLoaded:true, project:res.data})
         })
 
     }
@@ -34,11 +35,21 @@ export default class Project extends React.PureComponent
                 {
                     this.state.isLoaded &&
                     <div>
-                        <ProjectTitle title={this.state.project.title}/>
-                        <Carousel title={this.state.project.title.projectTitle} source={this.state.project.source}/>
-                        <ProjectDetail details={this.state.project.details}/>
+                        <ProjectTitle title={this.state.project.projectTitle}/>
+
+                        <Carousel title={this.state.project.projectTitle} sources={this.state.project.sources}/>
+                        
+                        <ProjectDetail  availability={this.state.project.availability}
+                                        languages={this.state.project.languages}
+                                        types={this.state.project.types}
+                                        roles={this.state.project.roles}
+                                        period={this.state.project.period}
+                                        team={this.state.project.team}
+                                        link={this.state.project.link}
+                        
+                        />
                         <hr/>
-                        <ProjectScenario title={this.state.project.title.projectTitle} scenario={this.state.project.source}/>
+                        <ProjectScenario title={this.state.project.projectTitle} scenario={this.state.project.sources}/>
                     </div>
                 }
             </div>

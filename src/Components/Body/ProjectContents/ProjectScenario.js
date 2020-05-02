@@ -9,6 +9,7 @@ export default class ProjectScenario extends React.PureComponent
         return (
             <div className="container scenarioContainer">
                 {
+                    this.props.scenario&&
                     this.props.scenario.length &&
                     this.props.scenario.map((v,i)=>{
                         return (
