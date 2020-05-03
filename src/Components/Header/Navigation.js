@@ -53,7 +53,7 @@ export default class Navigation extends React.PureComponent
                             <NavLink to='/about' activeClassName="active" onClick={()=>this.expandMenu()}>ABOUT</NavLink>
                         </li>
                         <li className="navItem">
-                            <a href={process.env.PUBLIC_URL + "/images/YMK_resume.pdf"} target="_blank" rel="noopener noreferrer" onClick={()=>this.expandMenu()}>RESUME</a>
+                            <a href={process.env.PUBLIC_URL + "/YMK_resume.pdf"} target="_blank" rel="noopener noreferrer" onClick={()=>this.expandMenu()}>RESUME</a>
                         </li>
                     </ul>
                     <ul className="navIcons">
